@@ -33,5 +33,5 @@
     <s:Image click="warningIconClick(event)" toolTip="warning" source="{IconClasses.warningIcon}" height="32" width="32" smooth="true" />
     <s:Image click="watchedIconClick(event)" toolTip="watched" source="{IconClasses.watchedIcon}" height="32" width="32" smooth="true" />
     <s:Image click="wontIconClick(event)" toolTip="won't watch" source="{IconClasses.wontIcon}" height="32" width="32" smooth="true" />
-    <s:Image click="clearIconClick(event)" toolTip="clear" source="{IconClasses.wontIcon}" height="32" width="32" smooth="true" />
+    <s:Image click="clearIconClick(event)" toolTip="clear" source="{IconClasses.clearIcon}" height="32" width="32" smooth="true" />
 </s:HGroup>

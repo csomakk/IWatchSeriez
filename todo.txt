@@ -1,8 +1,6 @@
-- to git
 - icons to air
-- mark empty
 - automatically mark setting
-- ha csak 1 avi van a mappában, mark folder as well.
+- ha csak 1 avi van a mappï¿½ban, mark folder as well.
 - hide srt
 - draganddrop
 - tabs like in TC

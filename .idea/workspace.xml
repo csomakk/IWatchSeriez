@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f95833a3-feed-4a79-9285-d9d3c272d371" name="Default" comment="" />
+    <list default="true" id="f95833a3-feed-4a79-9285-d9d3c272d371" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IconsBar.mxml" afterPath="$PROJECT_DIR$/src/IconsBar.mxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo.txt" afterPath="$PROJECT_DIR$/todo.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="IWatchSeriez.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/fragment.js2" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1373921620886" ignored="false" />
-    <file path="/IconsBar.mxml" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1374240741831" ignored="false" />
+    <file path="/IconsBar.mxml" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1374242610131" ignored="false" />
     <file path="/IWatchSeriez.mxml" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1374240780541" ignored="false" />
     <file path="/IconClasses.as" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1374240948976" ignored="false" />
+    <file path="/Dummy.txt" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1374242574805" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,11 +75,8 @@
       <file leaf-file-name="FileSystemListItemRenderer.mxml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FileSystemListItemRenderer.mxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="51" selection-start="577" selection-end="577" vertical-scroll-proportion="-7.1923075">
-              <folding>
-                <marker date="1374240603834" expanded="false" signature="305:361" placeholder="..." />
-                <marker date="1374240603834" expanded="true" signature="524:646" placeholder="{...}" />
-              </folding>
+            <state line="12" column="51" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -90,7 +93,7 @@
       <file leaf-file-name="todo.txt" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/todo.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="38" selection-start="36" selection-end="36" vertical-scroll-proportion="0.093406595">
+            <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -99,14 +102,14 @@
       <file leaf-file-name="IconsBar.mxml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/IconsBar.mxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="88" selection-start="1855" selection-end="1863" vertical-scroll-proportion="-17.23077">
+            <state line="13" column="53" selection-start="496" selection-end="496" vertical-scroll-proportion="-2.8461537">
               <folding>
-                <marker date="1374240741604" expanded="true" signature="260:341" placeholder="{...}" />
-                <marker date="1374240741604" expanded="true" signature="409:495" placeholder="{...}" />
-                <marker date="1374240741604" expanded="true" signature="562:647" placeholder="{...}" />
-                <marker date="1374240741604" expanded="true" signature="714:799" placeholder="{...}" />
-                <marker date="1374240741604" expanded="true" signature="863:945" placeholder="{...}" />
-                <marker date="1374240741604" expanded="true" signature="1009:1071" placeholder="{...}" />
+                <marker date="1374242614431" expanded="true" signature="260:341" placeholder="{...}" />
+                <marker date="1374242614431" expanded="true" signature="409:495" placeholder="{...}" />
+                <marker date="1374242614431" expanded="true" signature="562:647" placeholder="{...}" />
+                <marker date="1374242614431" expanded="true" signature="714:799" placeholder="{...}" />
+                <marker date="1374242614431" expanded="true" signature="863:945" placeholder="{...}" />
+                <marker date="1374242614431" expanded="true" signature="1009:1071" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -115,26 +118,26 @@
       <file leaf-file-name="IWatchSeriez.mxml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/IWatchSeriez.mxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="62" selection-start="700" selection-end="700" vertical-scroll-proportion="-9.153846">
+            <state line="14" column="68" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0">
               <folding>
                 <marker date="1373921046374" expanded="false" signature="453:509" placeholder="..." />
-                <marker date="1373921046374" expanded="true" signature="636:808" placeholder="{...}" />
-                <marker date="1373921046374" expanded="true" signature="699:766" placeholder="{...}" />
-                <marker date="1373921046374" expanded="true" signature="852:920" placeholder="{...}" />
-                <marker date="1373921046374" expanded="true" signature="996:1167" placeholder="{...}" />
-                <marker date="1373921046374" expanded="true" signature="1225:1294" placeholder="{...}" />
-                <marker date="1373921046374" expanded="true" signature="1340:1768" placeholder="{...}" />
-                <marker date="1373921046374" expanded="true" signature="1486:1758" placeholder="{...}" />
-                <marker date="1373921046374" expanded="true" signature="1584:1744" placeholder="{...}" />
-                <marker date="1373921046374" expanded="true" signature="1642:1726" placeholder="{...}" />
-                <marker date="1373921046374" expanded="true" signature="1814:2113" placeholder="{...}" />
-                <marker date="1373921046374" expanded="true" signature="2161:2685" placeholder="{...}" />
-                <marker date="1373921046374" expanded="true" signature="2394:2623" placeholder="{...}" />
-                <marker date="1373921046374" expanded="true" signature="2733:3184" placeholder="{...}" />
-                <marker date="1373921046374" expanded="true" signature="2881:3174" placeholder="{...}" />
-                <marker date="1373921046374" expanded="true" signature="2979:3160" placeholder="{...}" />
-                <marker date="1373921046374" expanded="true" signature="3043:3142" placeholder="{...}" />
-                <marker date="1373921046374" expanded="true" signature="3257:3326" placeholder="{...}" />
+                <marker date="1373921046374" expanded="false" signature="636:808" placeholder="{...}" />
+                <marker date="1373921046374" expanded="false" signature="699:766" placeholder="{...}" />
+                <marker date="1373921046374" expanded="false" signature="852:920" placeholder="{...}" />
+                <marker date="1373921046374" expanded="false" signature="996:1167" placeholder="{...}" />
+                <marker date="1373921046374" expanded="false" signature="1225:1294" placeholder="{...}" />
+                <marker date="1373921046374" expanded="false" signature="1340:1768" placeholder="{...}" />
+                <marker date="1373921046374" expanded="false" signature="1486:1758" placeholder="{...}" />
+                <marker date="1373921046374" expanded="false" signature="1584:1744" placeholder="{...}" />
+                <marker date="1373921046374" expanded="false" signature="1642:1726" placeholder="{...}" />
+                <marker date="1373921046374" expanded="false" signature="1814:2113" placeholder="{...}" />
+                <marker date="1373921046374" expanded="false" signature="2161:2685" placeholder="{...}" />
+                <marker date="1373921046374" expanded="false" signature="2394:2623" placeholder="{...}" />
+                <marker date="1373921046374" expanded="false" signature="2733:3184" placeholder="{...}" />
+                <marker date="1373921046374" expanded="false" signature="2881:3174" placeholder="{...}" />
+                <marker date="1373921046374" expanded="false" signature="2979:3160" placeholder="{...}" />
+                <marker date="1373921046374" expanded="false" signature="3043:3142" placeholder="{...}" />
+                <marker date="1373921046374" expanded="false" signature="3257:3326" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -147,13 +150,22 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/FileSystemListItemRenderer.mxml" />
-        <option value="$PROJECT_DIR$/src/IconsBar.mxml" />
         <option value="$PROJECT_DIR$/src/IWatchSeriez.mxml" />
         <option value="$PROJECT_DIR$/src/IconClasses.as" />
+        <option value="$PROJECT_DIR$/src/IconsBar.mxml" />
+        <option value="$PROJECT_DIR$/todo.txt" />
       </list>
     </option>
   </component>
@@ -163,7 +175,7 @@
     <option name="width" value="1374" />
     <option name="height" value="776" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -230,16 +242,20 @@
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager" selected="Flash App.Unnamed">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -267,19 +283,6 @@
       </option>
       <option name="moduleName" value="" />
       <option name="trusted" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -310,9 +313,17 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="RemoteFlashRunConfigurationType" factoryName="Flash Remote Debug">
-      <option name="BCName" value="" />
-      <option name="moduleName" value="" />
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -328,6 +339,11 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="RemoteFlashRunConfigurationType" factoryName="Flash Remote Debug">
+      <option name="BCName" value="" />
+      <option name="moduleName" value="" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -445,7 +461,6 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3990755" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -462,6 +477,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -526,59 +542,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/IWatchSeriez.mxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="62" selection-start="700" selection-end="700" vertical-scroll-proportion="-9.153846">
-          <folding>
-            <marker date="1373921046374" expanded="false" signature="453:509" placeholder="..." />
-            <marker date="1373921046374" expanded="true" signature="636:808" placeholder="{...}" />
-            <marker date="1373921046374" expanded="true" signature="699:766" placeholder="{...}" />
-            <marker date="1373921046374" expanded="true" signature="852:920" placeholder="{...}" />
-            <marker date="1373921046374" expanded="true" signature="996:1167" placeholder="{...}" />
-            <marker date="1373921046374" expanded="true" signature="1225:1294" placeholder="{...}" />
-            <marker date="1373921046374" expanded="true" signature="1340:1768" placeholder="{...}" />
-            <marker date="1373921046374" expanded="true" signature="1486:1758" placeholder="{...}" />
-            <marker date="1373921046374" expanded="true" signature="1584:1744" placeholder="{...}" />
-            <marker date="1373921046374" expanded="true" signature="1642:1726" placeholder="{...}" />
-            <marker date="1373921046374" expanded="true" signature="1814:2113" placeholder="{...}" />
-            <marker date="1373921046374" expanded="true" signature="2161:2685" placeholder="{...}" />
-            <marker date="1373921046374" expanded="true" signature="2394:2623" placeholder="{...}" />
-            <marker date="1373921046374" expanded="true" signature="2733:3184" placeholder="{...}" />
-            <marker date="1373921046374" expanded="true" signature="2881:3174" placeholder="{...}" />
-            <marker date="1373921046374" expanded="true" signature="2979:3160" placeholder="{...}" />
-            <marker date="1373921046374" expanded="true" signature="3043:3142" placeholder="{...}" />
-            <marker date="1373921046374" expanded="true" signature="3257:3326" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IconsBar.mxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="88" selection-start="1855" selection-end="1863" vertical-scroll-proportion="-17.23077">
-          <folding>
-            <marker date="1374240741604" expanded="true" signature="260:341" placeholder="{...}" />
-            <marker date="1374240741604" expanded="true" signature="409:495" placeholder="{...}" />
-            <marker date="1374240741604" expanded="true" signature="562:647" placeholder="{...}" />
-            <marker date="1374240741604" expanded="true" signature="714:799" placeholder="{...}" />
-            <marker date="1374240741604" expanded="true" signature="863:945" placeholder="{...}" />
-            <marker date="1374240741604" expanded="true" signature="1009:1071" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FileSystemListItemRenderer.mxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="51" selection-start="577" selection-end="577" vertical-scroll-proportion="-7.1923075">
-          <folding>
-            <marker date="1374240603834" expanded="false" signature="305:361" placeholder="..." />
-            <marker date="1374240603834" expanded="true" signature="524:646" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Adobe/Adobe Flash Builder 4.6/sdks/4.6.0/frameworks/libs/air/airglobal.swc!/library.swf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="19" selection-start="5903" selection-end="5903" vertical-scroll-proportion="0.46212122">
+        <state line="12" column="51" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -592,7 +558,113 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/todo.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="38" selection-start="36" selection-end="36" vertical-scroll-proportion="0.093406595">
+        <state line="2" column="38" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IconsBar.mxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="88" selection-start="1855" selection-end="1863" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1374242614431" expanded="true" signature="260:341" placeholder="{...}" />
+            <marker date="1374242614431" expanded="true" signature="409:495" placeholder="{...}" />
+            <marker date="1374242614431" expanded="true" signature="562:647" placeholder="{...}" />
+            <marker date="1374242614431" expanded="true" signature="714:799" placeholder="{...}" />
+            <marker date="1374242614431" expanded="true" signature="863:945" placeholder="{...}" />
+            <marker date="1374242614431" expanded="true" signature="1009:1071" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IWatchSeriez.mxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="68" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1373921046374" expanded="false" signature="453:509" placeholder="..." />
+            <marker date="1373921046374" expanded="false" signature="636:808" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="699:766" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="852:920" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="996:1167" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="1225:1294" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="1340:1768" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="1486:1758" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="1584:1744" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="1642:1726" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="1814:2113" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="2161:2685" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="2394:2623" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="2733:3184" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="2881:3174" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="2979:3160" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="3043:3142" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="3257:3326" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IWatchSeriez.mxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="68" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1373921046374" expanded="false" signature="453:509" placeholder="..." />
+            <marker date="1373921046374" expanded="false" signature="636:808" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="699:766" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="852:920" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="996:1167" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="1225:1294" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="1340:1768" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="1486:1758" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="1584:1744" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="1642:1726" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="1814:2113" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="2161:2685" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="2394:2623" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="2733:3184" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="2881:3174" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="2979:3160" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="3043:3142" placeholder="{...}" />
+            <marker date="1373921046374" expanded="false" signature="3257:3326" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileSystemListItemRenderer.mxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="51" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Adobe/Adobe Flash Builder 4.6/sdks/4.6.0/frameworks/libs/air/airglobal.swc!/library.swf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="145" column="19" selection-start="5903" selection-end="5903" vertical-scroll-proportion="0.46212122" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IconClasses.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="29" selection-start="873" selection-end="873" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IconsBar.mxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="53" selection-start="496" selection-end="496" vertical-scroll-proportion="-2.8461537">
+          <folding>
+            <marker date="1374242614431" expanded="true" signature="260:341" placeholder="{...}" />
+            <marker date="1374242614431" expanded="true" signature="409:495" placeholder="{...}" />
+            <marker date="1374242614431" expanded="true" signature="562:647" placeholder="{...}" />
+            <marker date="1374242614431" expanded="true" signature="714:799" placeholder="{...}" />
+            <marker date="1374242614431" expanded="true" signature="863:945" placeholder="{...}" />
+            <marker date="1374242614431" expanded="true" signature="1009:1071" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
