@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f95833a3-feed-4a79-9285-d9d3c272d371" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo.txt" afterPath="$PROJECT_DIR$/todo.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="IWatchSeriez.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -13,7 +13,6 @@
     <file path="/Dummy.txt" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1374242673530" ignored="false" />
     <file path="/todo.txt" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1374242822030" ignored="false" />
     <file path="/IWatchSeriez-app.xml" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1374244607165" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1374244719278" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +92,7 @@
       <file leaf-file-name="todo.txt" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/todo.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0">
+            <state line="4" column="44" selection-start="142" selection-end="142" vertical-scroll-proportion="0.16625917">
               <folding />
             </state>
           </provider>
@@ -738,7 +737,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/todo.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0">
+        <state line="4" column="44" selection-start="142" selection-end="142" vertical-scroll-proportion="0.16625917">
           <folding />
         </state>
       </provider>
