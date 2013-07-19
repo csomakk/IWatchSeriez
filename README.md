@@ -4,10 +4,10 @@ IWatchSeriez
 I Watch Seriez is a file browser to help you keep track of your progress, and much more!
 
 Latest installer: 
-Click RAW button on site https://github.com/csomakk/IWatchSeriez/blob/master/install/IWatchSeriez.air 
+available here: https://raw.github.com/csomakk/IWatchSeriez/blob/master/install/IWatchSeriez.air 
 Adobe AIR is needed, what you can get here: http://get.adobe.com/air/
 
-![ScreenShot](https://raw.github.com/i-saumitra/Voice-controlled-MP3-Player/master/screenshot.jpg)
+![ScreenShot](https://raw.github.com/csomakk/IWatchSeriez/master/screenshots/v001.PNG)
 
 FOR DEVS:
 
