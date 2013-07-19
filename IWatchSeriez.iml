@@ -7,7 +7,11 @@
           <sdk name="4.6.0" />
         </dependencies>
         <compiler-options />
-        <packaging-air-desktop use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/IWatchSeriez-app.xml" package-file-name="IWatchSeriez" />
+        <packaging-air-desktop use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/IWatchSeriez-app.xml" package-file-name="IWatchSeriez">
+          <files-to-package>
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/assets/appIcons" path-in-package="appIcons" />
+          </files-to-package>
+        </packaging-air-desktop>
         <packaging-android />
         <packaging-ios />
       </configuration>

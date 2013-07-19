@@ -1,10 +1,13 @@
+- tabs like in TC
 - icons to air
 - automatically mark setting
 - ha csak 1 avi van a mapp�ban, mark folder as well.
 - hide srt
-- draganddrop
-- tabs like in TC
+- draganddrop to playlist, etc.
 - imdb
 - watchlist
 - dropbox sync
-- ...
+- auto update
+- screenshots to website
+- watch vlc with ane.
+- watchlist
