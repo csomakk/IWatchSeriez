@@ -5,6 +5,7 @@ I Watch Seriez is a file browser to help you keep track of your progress, and mu
 
 Latest installer: 
 available here: https://github.com/csomakk/IWatchSeriez/raw/master/install/IWatchSeriez.air
+
 Adobe AIR is needed, what you can get here: http://get.adobe.com/air/
 
 ![ScreenShot](https://raw.github.com/csomakk/IWatchSeriez/master/screenshots/v001.PNG)
