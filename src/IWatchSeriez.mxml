@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009"
+                       xmlns:s="library://ns.adobe.com/flex/spark"
+                       xmlns:mx="library://ns.adobe.com/flex/mx" xmlns:local="*"
+                       showStatusBar="false"
+                       creationComplete="creationCompleteHandler(event)"
+                       close="closeHandler(event)"
+        >
+    <fx:Script><![CDATA[
+        import mx.events.FileEvent;
+        import mx.events.FlexEvent;
+
+        public var files:Dictionary = new Dictionary();
+
+        public function setIconsForSelected(iconString:String):void {
+            for each( var f:File in fileList.selectedItems ) {
+                files[ f.nativePath ] = iconString;
+            }
+            fileList.refresh();
+        }
+
+        private function setOutput():void {
+            output.text = fileList.directory.nativePath;
+        }
+
+        private function fileList_fileChooseHandler(event:FileEvent):void {
+            event.file.openWithDefaultApplication();
+            files[ event.file.nativePath ] = IconClasses.questionIconName;
+            fileList.refresh();
+        }
+
+        private function closeHandler(event:Event):void {
+            saveLocation();
+            saveDictionary();
+        }
+
+        public function loadLocation():void {
+            var file:File = File.applicationStorageDirectory;
+            file = file.resolvePath("location.xml");
+            if (file.exists) {
+                var xml:XML = new CsUtils().loadXML(file.url);
+                if (xml != null) {
+                    for each (var node:XML in xml.path) {
+                        fileList.directory = new File(node);
+                    }
+                }
+            }
+        }
+
+        public function saveLocation():void {
+            var file:File = File.applicationStorageDirectory;
+            file = file.resolvePath("location.xml");
+            var xml:XML = new XML("<location><path/></location>");
+            xml.path = fileList.directory.nativePath;
+            new CsUtils().saveAsXML(xml, file.url);
+        }
+
+        public function saveDictionary():void {
+            var file:File = File.applicationStorageDirectory;
+            file = file.resolvePath("dictionary.xml");
+            var xml:XML = new XML("<dictionary><items/></dictionary>");
+            for (var key:Object in files) {
+                var node:XML = new XML("<item><path/><iconString/></item>");
+                node.path = key;
+                node.iconString = files[key];
+                (xml.items as XMLList).appendChild(node);
+            }
+            new CsUtils().saveAsXML(xml, file.url);
+        }
+
+        public function loadDictionary():void {
+            var file:File = File.applicationStorageDirectory;
+            file = file.resolvePath("dictionary.xml");
+            if (file.exists) {
+                var xml:XML = new CsUtils().loadXML(file.url);
+                if (xml != null) {
+                    for each (var node:XML in xml.items.item) {
+                        files[String(node.path)] = String(node.iconString);
+                    }
+                }
+            }
+        }
+
+        private function creationCompleteHandler(event:FlexEvent):void {
+            loadLocation();
+            loadDictionary();
+        }
+        ]]></fx:Script>
+    <s:VGroup paddingTop="8" paddingBottom="8" horizontalCenter="0" height="100%">
+        <s:HGroup paddingLeft="7" paddingRight="7" paddingTop="7" paddingBottom="7" horizontalCenter="0" width="400">
+            <s:Button label="Up" click="fileList.navigateUp(); setOutput();"
+                      enabled="{fileList.canNavigateUp}"/>
+            <mx:FileSystemHistoryButton label="Back" dataProvider="{fileList.backHistory}"
+                                        enabled="{fileList.canNavigateBack}"
+                                        click="fileList.navigateBack();"
+                                        itemClick="fileList.navigateBack(event.index);"/>
+            <mx:FileSystemHistoryButton label="Forward" dataProvider="{fileList.forwardHistory}"
+                                        enabled="{fileList.canNavigateForward}"
+                                        click="fileList.navigateForward();"
+                                        itemClick="fileList.navigateForward(event.index);"/>
+            <s:TextInput id="output" width="100%"/>
+        </s:HGroup>
+        <local:IconsBar horizontalCenter="0" width="400" topLevelApp="{this}" />
+        <mx:FileSystemList width="400" height="100%"
+                           id="fileList"
+                           fileChoose="fileList_fileChooseHandler(event);"
+                           directoryChange="setOutput();"
+                           itemRenderer="FileSystemListItemRenderer"
+                           allowMultipleSelection="true"
+                />
+    </s:VGroup>
+</s:WindowedApplication>

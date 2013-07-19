@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<s:ItemRenderer xmlns:fx="http://ns.adobe.com/mxml/2009"
+                dataChange="dataChangeHandler(event)"
+                implements="mx.controls.listClasses.IListItemRenderer"
+                xmlns:s="library://ns.adobe.com/flex/spark">
+    <fx:Script><![CDATA[
+        import mx.core.FlexGlobals;
+        import mx.events.FlexEvent;
+
+        public var topLevelApp:IWatchSeriez = FlexGlobals.topLevelApplication as IWatchSeriez;
+
+        private function dataChangeHandler(event:FlexEvent):void {
+            markerBitmapImage.source = IconClasses.stringToIcon(topLevelApp.files[(data as File).nativePath]);
+        }
+
+        ]]></fx:Script>
+    <s:HGroup>
+        <s:BitmapImage source="{(data.icon as Icon).bitmaps[1]}" />
+        <s:BitmapImage id="markerBitmapImage" height="16" width="16" smooth="true" />
+        <s:Label text="{data.name}" />
+    </s:HGroup>
+</s:ItemRenderer>
