@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f95833a3-feed-4a79-9285-d9d3c272d371" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IWatchSeriez-app.xml" afterPath="$PROJECT_DIR$/IWatchSeriez-app.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IWatchSeriez.iml" afterPath="$PROJECT_DIR$/IWatchSeriez.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo.txt" afterPath="$PROJECT_DIR$/todo.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="IWatchSeriez.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -16,6 +13,7 @@
     <file path="/Dummy.txt" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1374242673530" ignored="false" />
     <file path="/todo.txt" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1374242822030" ignored="false" />
     <file path="/IWatchSeriez-app.xml" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1374244607165" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1374244719278" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +75,7 @@
       <file leaf-file-name="FileSystemListItemRenderer.mxml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FileSystemListItemRenderer.mxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="51" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0">
+            <state line="12" column="51" selection-start="577" selection-end="577" vertical-scroll-proportion="-0.65384614">
               <folding />
             </state>
           </provider>
@@ -92,30 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="todo.txt" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="todo.txt" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/todo.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="78" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
+            <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IWatchSeriez-app.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/IWatchSeriez-app.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="127" column="56" selection-start="6553" selection-end="6553" vertical-scroll-proportion="0.3030303">
-              <folding>
-                <element signature="e#41#494#0" expanded="false" />
-                <element signature="e#563#774#0" expanded="false" />
-                <element signature="e#1111#1490#0" expanded="false" />
-                <element signature="e#2371#2444#0" expanded="false" />
-                <element signature="tag#initialWindow#0;tag#application#0" expanded="false" />
-                <element signature="e#5323#5632#0" expanded="false" />
-                <element signature="e#8006#8171#0" expanded="false" />
-                <element signature="e#9076#9314#0" expanded="false" />
-                <element signature="e#10884#11305#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -192,9 +171,9 @@
         <option value="$PROJECT_DIR$/src/FileSystemListItemRenderer.mxml" />
         <option value="$PROJECT_DIR$/src/IWatchSeriez.mxml" />
         <option value="$PROJECT_DIR$/src/IconsBar.mxml" />
-        <option value="$PROJECT_DIR$/todo.txt" />
         <option value="$PROJECT_DIR$/src/IconClasses.as" />
         <option value="$PROJECT_DIR$/IWatchSeriez-app.xml" />
+        <option value="$PROJECT_DIR$/todo.txt" />
       </list>
     </option>
   </component>
@@ -704,7 +683,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FileSystemListItemRenderer.mxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="51" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0">
+        <state line="12" column="51" selection-start="577" selection-end="577" vertical-scroll-proportion="-0.65384614">
           <folding />
         </state>
       </provider>
@@ -728,13 +707,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/todo.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="78" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/appIcons/16.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -749,7 +721,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/IWatchSeriez-app.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="56" selection-start="6553" selection-end="6553" vertical-scroll-proportion="0.3030303">
+        <state line="126" column="40" selection-start="6492" selection-end="6492" vertical-scroll-proportion="0.26010102">
           <folding>
             <element signature="e#41#494#0" expanded="false" />
             <element signature="e#563#774#0" expanded="false" />
@@ -761,6 +733,13 @@
             <element signature="e#9076#9314#0" expanded="false" />
             <element signature="e#10884#11305#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>

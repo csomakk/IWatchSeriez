@@ -1,5 +1,4 @@
 - tabs like in TC
-- icons to air
 - automatically mark setting
 - ha csak 1 avi van a mapp�ban, mark folder as well.
 - hide srt
