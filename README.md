@@ -7,6 +7,7 @@ Latest installer:
 Click RAW button on site https://github.com/csomakk/IWatchSeriez/blob/master/install/IWatchSeriez.air 
 Adobe AIR is needed, what you can get here: http://get.adobe.com/air/
 
+![ScreenShot](https://raw.github.com/i-saumitra/Voice-controlled-MP3-Player/master/screenshot.jpg)
 
 FOR DEVS:
 
