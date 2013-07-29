@@ -1,26 +1,40 @@
 <?xml version="1.0"?>
 <s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009"
                        xmlns:s="library://ns.adobe.com/flex/spark"
-                       xmlns:mx="library://ns.adobe.com/flex/mx" xmlns:local="*"
+                       xmlns:mx="library://ns.adobe.com/flex/mx"
+                       xmlns:local="*"
+                       xmlns:tabBar="tabbar.*"
                        showStatusBar="false"
                        creationComplete="creationCompleteHandler(event)"
                        close="closeHandler(event)"
         >
     <fx:Script><![CDATA[
+        import mx.collections.ArrayCollection;
         import mx.events.FileEvent;
         import mx.events.FlexEvent;
+        import mx.events.IndexChangedEvent;
+
+        import spark.events.IndexChangeEvent;
+
+        public static var HOME_FOLDER_PATH:String = "root$:\\Computer";
 
         public var files:Dictionary = new Dictionary();
 
+        [Bindable]
+        public var tabs:ArrayCollection = new ArrayCollection();
+
         public function setIconsForSelected(iconString:String):void {
-            for each( var f:File in fileList.selectedItems ) {
+            for each (var f:File in fileList.selectedItems) {
                 files[ f.nativePath ] = iconString;
             }
             fileList.refresh();
         }
 
-        private function setOutput():void {
+        private function handleFolderChange():void {
             output.text = fileList.directory.nativePath;
+            if (tabBar.selectedIndex != -1) {
+                tabs.setItemAt(output.text, tabBar.selectedIndex);
+            }
         }
 
         private function fileList_fileChooseHandler(event:FileEvent):void {
@@ -40,18 +54,28 @@
             if (file.exists) {
                 var xml:XML = new CsUtils().loadXML(file.url);
                 if (xml != null) {
-                    for each (var node:XML in xml.path) {
-                        fileList.directory = new File(node);
+                    for each (var node:XML in xml.paths.path) {
+                        var path:String = node.path;
+                        if (path != HOME_FOLDER_PATH) {
+                            tabs.addItem(path);
+                        }
                     }
                 }
+            }
+            if (tabs.length == 0) {
+                tabs.addItem(HOME_FOLDER_PATH);
             }
         }
 
         public function saveLocation():void {
             var file:File = File.applicationStorageDirectory;
             file = file.resolvePath("location.xml");
-            var xml:XML = new XML("<location><path/></location>");
-            xml.path = fileList.directory.nativePath;
+            var xml:XML = new XML("<location><paths/></location>");
+            for each (var tab:Object in tabs) {
+                var node:XML = new XML("<path/>");
+                node.path = tab;
+                (xml.paths as XMLList).appendChild(node);
+            }
             new CsUtils().saveAsXML(xml, file.url);
         }
 
@@ -82,13 +106,32 @@
         }
 
         private function creationCompleteHandler(event:FlexEvent):void {
+
             loadLocation();
+            tabBar.setSelectedToLast();
+            fileList.directory = new File(tabBar.selectedItem);
             loadDictionary();
+
+        }
+
+        private function tabBar1_changeHandler(event:IndexChangeEvent):void {
+            fileList.directory = new File(tabBar.selectedItem);
+        }
+
+        function addNewTab():void {
+            var currentPath:String = fileList.directory.nativePath;
+            tabs.addItem(currentPath)
+        }
+
+        private function about_clickHandler(event:MouseEvent):void {
+            var urlReq:URLRequest = new URLRequest("https://github.com/csomakk/IWatchSeriez/");
+            navigateToURL(urlReq, "_blank");
         }
         ]]></fx:Script>
-    <s:VGroup paddingTop="8" paddingBottom="8" horizontalCenter="0" height="100%">
-        <s:HGroup paddingLeft="7" paddingRight="7" paddingTop="7" paddingBottom="7" horizontalCenter="0" width="400">
-            <s:Button label="Up" click="fileList.navigateUp(); setOutput();"
+    <s:VGroup paddingBottom="10" paddingLeft="10" paddingTop="10" paddingRight="10"
+            width="100%" height="100%">
+        <s:HGroup width="100%">
+            <s:Button label="Up" click="fileList.navigateUp(); handleFolderChange();"
                       enabled="{fileList.canNavigateUp}"/>
             <mx:FileSystemHistoryButton label="Back" dataProvider="{fileList.backHistory}"
                                         enabled="{fileList.canNavigateBack}"
@@ -100,13 +143,21 @@
                                         itemClick="fileList.navigateForward(event.index);"/>
             <s:TextInput id="output" width="100%"/>
         </s:HGroup>
-        <local:IconsBar horizontalCenter="0" width="400" topLevelApp="{this}" />
-        <mx:FileSystemList width="400" height="100%"
+        <tabBar:TabBar id="tabBar"
+                       left="8" right="8" y="2"
+                       data="@{tabs}"
+                       change="tabBar1_changeHandler(event)" />
+        <mx:FileSystemList width="100%" height="100%"
                            id="fileList"
                            fileChoose="fileList_fileChooseHandler(event);"
-                           directoryChange="setOutput();"
+                           directoryChange="handleFolderChange();"
                            itemRenderer="FileSystemListItemRenderer"
                            allowMultipleSelection="true"
                 />
+        <local:IconsBar topLevelApp="{this}" />
     </s:VGroup>
+    <s:Image bottom="8" right="8" width="32" height="32"
+             smooth="true"
+             source="{ IconClasses.githubIcon }"
+             click="about_clickHandler(event)" />
 </s:WindowedApplication>

@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<s:HGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+        creationComplete="creationCompleteHandler(event)">
+    <fx:Script><![CDATA[
+        import mx.collections.ArrayCollection;
+        import mx.events.FlexEvent;
+
+        import spark.events.IndexChangeEvent;
+
+        [Bindable]
+        public var data:ArrayCollection;
+
+        private function addButton_clickHandler(event:MouseEvent):void {
+            data.addItem(list.selectedItem);
+        }
+
+        public function get selectedItem():String {
+            return list.selectedItem;
+        }
+
+        public function set selectedItem(o:String):void {
+            list.selectedItem = o;
+        }
+
+        public function get selectedIndex():int {
+            return list.selectedIndex;
+        }
+
+        public function setSelectedToLast():void {
+            if (data.length > 0) {
+                list.selectedIndex = data.length - 1;
+            }
+        }
+
+        private function tabsList_changeHandler(event:IndexChangeEvent):void {
+            dispatchEvent(event);
+        }
+
+        private function creationCompleteHandler(event:FlexEvent):void {
+            addEventListener(TabEvent.CLOSE_EVENT, onTabClose);
+        }
+
+        private function onTabClose(event:TabEvent):void {
+            if(data.length > 1) {
+                data.removeItemAt(event.itemIndex);
+            }
+        }
+        ]]></fx:Script>
+    <fx:Metadata>
+        [Event(name="change", type="spark.events.IndexChangeEvent")]
+    </fx:Metadata>
+    <s:List id="list"
+            dataProvider="{ data }"
+            itemRenderer="tabbar.TabItemRenderer"
+            requireSelection="true"
+            change="tabsList_changeHandler(event)" >
+        <s:layout><s:HorizontalLayout /></s:layout>
+    </s:List>
+    <s:Image click="addButton_clickHandler(event)"
+             source="{ IconClasses.addTabIcon }"
+             width="16" height="16" right="0"
+             smooth="true" />
+</s:HGroup>

@@ -15,8 +15,8 @@
 
         ]]></fx:Script>
     <s:HGroup>
-        <s:BitmapImage source="{(data.icon as Icon).bitmaps[1]}" />
+        <s:BitmapImage source="{ (data.icon as Icon).bitmaps[1] }" />
         <s:BitmapImage id="markerBitmapImage" height="16" width="16" smooth="true" />
-        <s:Label text="{data.name}" />
+        <s:Label text="{ data.name }" />
     </s:HGroup>
 </s:ItemRenderer>

@@ -32,6 +32,18 @@ public class IconClasses {
     public static var clearIcon:Class;
     public static var clearIconName:String = "IconClasses.clearIcon";
 
+    [Embed(source="/closeTab.png")]
+    [Bindable]
+    public static var closeTabIcon:Class;
+
+    [Embed(source="/add.png")]
+    [Bindable]
+    public static var addTabIcon:Class;
+
+    [Embed(source="/github.png")]
+    [Bindable]
+    public static var githubIcon:Class;
+
     public static function stringToIcon(name:String):Class{
         if(!name) return null;
         if(name.search(newIconName) == 0) return newIcon;

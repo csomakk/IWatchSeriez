@@ -1,13 +1,14 @@
-/**
- * Created with IntelliJ IDEA.
- * User: Gabor
- * Date: 2013.07.19.
- * Time: 17:10
- * To change this template use File | Settings | File Templates.
- */
 package {
 public class StringUtils {
-    public function StringUtils() {
+    public static function getLastPart(str:String):String {
+        var arr:Array = str.split("\\");
+        if(arr[arr.length-1] == "") arr.pop();
+        return arr[arr.length-1];
+    }
+
+    public static function trim(str:String, ifLongerThan:int = 10):String {
+        if(str.length < ifLongerThan) return str;
+        return str.slice(0,ifLongerThan)+"..";
     }
 }
 }
