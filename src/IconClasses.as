@@ -27,6 +27,11 @@ public class IconClasses {
     public static var wontIcon:Class;
     public static var wontIconName:String = "IconClasses.wontIcon";
 
+    [Embed(source="/half.png")]
+    [Bindable]
+    public static var halfIcon:Class;
+    public static var halfIconName:String = "IconClasses.halfIcon";
+
     [Embed(source="/white.png")]
     [Bindable]
     public static var clearIcon:Class;
@@ -44,13 +49,14 @@ public class IconClasses {
     [Bindable]
     public static var githubIcon:Class;
 
-    public static function stringToIcon(name:String):Class{
-        if(!name) return null;
-        if(name.search(newIconName) == 0) return newIcon;
-        if(name.search(questionIconName) == 0) return questionIcon;
-        if(name.search(warningIconName) == 0) return warningIcon;
-        if(name.search(watchedIconName) == 0) return watchedIcon;
-        if(name.search(wontIconName) == 0) return wontIcon;
+    public static function stringToIcon(name:String):Class {
+        if (!name) return null;
+        if (name.search(newIconName) == 0) return newIcon;
+        if (name.search(questionIconName) == 0) return questionIcon;
+        if (name.search(warningIconName) == 0) return warningIcon;
+        if (name.search(watchedIconName) == 0) return watchedIcon;
+        if (name.search(wontIconName) == 0) return wontIcon;
+        if (name.search(halfIconName) == 0) return halfIcon;
         return null;
     }
 

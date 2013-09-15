@@ -3,35 +3,19 @@
           xmlns:s="library://ns.adobe.com/flex/spark">
     <fx:Script><![CDATA[
         public var topLevelApp:IWatchSeriez;
-
-        private function newIconClick(event:MouseEvent):void {
-            topLevelApp.setIconsForSelected(IconClasses.newIconName);
-        }
-
-        private function questionIconClick(event:MouseEvent):void {
-            topLevelApp.setIconsForSelected(IconClasses.questionIconName);
-        }
-
-        private function warningIconClick(event:MouseEvent):void {
-            topLevelApp.setIconsForSelected(IconClasses.warningIconName);
-        }
-
-        private function watchedIconClick(event:MouseEvent):void {
-            topLevelApp.setIconsForSelected(IconClasses.watchedIconName);
-        }
-
-        private function wontIconClick(event:MouseEvent):void {
-            topLevelApp.setIconsForSelected(IconClasses.wontIconName);
-        }
-        private function clearIconClick(event:MouseEvent):void {
-            topLevelApp.setIconsForSelected(null);
-        }
-
         ]]></fx:Script>
-    <s:Image click="newIconClick(event)" toolTip="new" source="{IconClasses.newIcon}" height="32" width="32" smooth="true" />
-    <s:Image click="questionIconClick(event)" toolTip="started" source="{IconClasses.questionIcon}" height="32" width="32" smooth="true" />
-    <s:Image click="warningIconClick(event)" toolTip="warning" source="{IconClasses.warningIcon}" height="32" width="32" smooth="true" />
-    <s:Image click="watchedIconClick(event)" toolTip="watched" source="{IconClasses.watchedIcon}" height="32" width="32" smooth="true" />
-    <s:Image click="wontIconClick(event)" toolTip="won't watch" source="{IconClasses.wontIcon}" height="32" width="32" smooth="true" />
-    <s:Image click="clearIconClick(event)" toolTip="clear" source="{IconClasses.clearIcon}" height="32" width="32" smooth="true" />
+    <s:Image click="topLevelApp.setIconsForSelected(IconClasses.newIconName)" toolTip="new"
+             source="{IconClasses.newIcon}" height="32" width="32" smooth="true"/>
+    <s:Image click="topLevelApp.setIconsForSelected(IconClasses.questionIconName)" toolTip="started"
+             source="{IconClasses.questionIcon}" height="32" width="32" smooth="true"/>
+    <s:Image click="topLevelApp.setIconsForSelected(IconClasses.halfIconName)" toolTip="unfinished"
+             source="{IconClasses.halfIcon}" height="32" width="32" smooth="true"/>
+    <s:Image click="topLevelApp.setIconsForSelected(IconClasses.warningIconName)" toolTip="warning"
+             source="{IconClasses.warningIcon}" height="32" width="32" smooth="true"/>
+    <s:Image click="topLevelApp.setIconsForSelected(IconClasses.watchedIconName)" toolTip="watched"
+             source="{IconClasses.watchedIcon}" height="32" width="32" smooth="true"/>
+    <s:Image click="topLevelApp.setIconsForSelected(IconClasses.wontIconName)" toolTip="won't watch"
+             source="{IconClasses.wontIcon}" height="32" width="32" smooth="true"/>
+    <s:Image click="topLevelApp.setIconsForSelected(null)" toolTip="clear" source="{IconClasses.clearIcon}" height="32"
+             width="32" smooth="true"/>
 </s:HGroup>
