@@ -12,7 +12,6 @@
         import mx.collections.ArrayCollection;
         import mx.events.FileEvent;
         import mx.events.FlexEvent;
-        import mx.events.IndexChangedEvent;
 
         import spark.events.IndexChangeEvent;
 
@@ -28,6 +27,7 @@
                 files[ f.nativePath ] = iconString;
             }
             fileList.refresh();
+            saveDictionary();
         }
 
         private function handleFolderChange():void {
@@ -118,21 +118,16 @@
             fileList.directory = new File(tabBar.selectedItem);
         }
 
-        function addNewTab():void {
-            var currentPath:String = fileList.directory.nativePath;
-            tabs.addItem(currentPath)
-        }
-
-        private function about_clickHandler(event:MouseEvent):void {
+        private static function about_clickHandler(event:MouseEvent):void {
             var urlReq:URLRequest = new URLRequest("https://github.com/csomakk/IWatchSeriez/");
             navigateToURL(urlReq, "_blank");
         }
         ]]></fx:Script>
     <s:VGroup paddingBottom="10" paddingLeft="10" paddingTop="10" paddingRight="10"
-            width="100%" height="100%">
+              width="100%" height="100%">
         <s:HGroup width="100%">
             <s:Button label="Up" click="fileList.navigateUp(); handleFolderChange();"
-                      enabled="{fileList.canNavigateUp}"/>
+                      enabled="{ fileList.canNavigateUp }"/>
             <mx:FileSystemHistoryButton label="Back" dataProvider="{fileList.backHistory}"
                                         enabled="{fileList.canNavigateBack}"
                                         click="fileList.navigateBack();"
@@ -146,7 +141,7 @@
         <tabBar:TabBar id="tabBar"
                        left="8" right="8" y="2"
                        data="@{tabs}"
-                       change="tabBar1_changeHandler(event)" />
+                       change="tabBar1_changeHandler(event)"/>
         <mx:FileSystemList width="100%" height="100%"
                            id="fileList"
                            fileChoose="fileList_fileChooseHandler(event);"
@@ -154,10 +149,10 @@
                            itemRenderer="FileSystemListItemRenderer"
                            allowMultipleSelection="true"
                 />
-        <local:IconsBar topLevelApp="{this}" />
+        <local:IconsBar topLevelApp="{this}"/>
     </s:VGroup>
     <s:Image bottom="8" right="8" width="32" height="32"
              smooth="true"
              source="{ IconClasses.githubIcon }"
-             click="about_clickHandler(event)" />
+             click="about_clickHandler(event)"/>
 </s:WindowedApplication>
