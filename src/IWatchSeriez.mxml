@@ -154,6 +154,6 @@
     <s:Image bottom="8" right="8" width="32" height="32"
              smooth="true"
              source="{ IconClasses.githubIcon }"
-             toolTip="Help us! Contribute on GitHub!"
+             toolTip="About IWatchSeriez"
              click="about_clickHandler(event)"/>
 </s:WindowedApplication>
