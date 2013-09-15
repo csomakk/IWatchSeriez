@@ -23,7 +23,7 @@
     <!-- A string value of the format <0-999>.<0-999>.<0-999> that represents application version which can be used to check for application upgrade.
          Values can also be 1-part or 2-part. It is not necessary to have a 3-part value.
          An updated version of application must have a versionNumber value higher than the previous version. Required for namespace >= 2.5. -->
-    <versionNumber>0.1.0</versionNumber>
+    <versionNumber>0.2.0</versionNumber>
 
     <!-- A string value (such as "v1", "2.5", or "Alpha 1") that represents the version of the application, as it should be shown to users. Optional. -->
     <!--<versionLabel></versionLabel>-->
@@ -123,17 +123,17 @@
 
     <!-- The icon the system uses for the application. For at least one resolution, specify the path to a PNG file included in the AIR package. Optional. -->
     <icon>
-          <image16x16>appIcons/16.png</image16x16>
-          <image29x29>appIcons/29.png</image29x29>
-          <image32x32>appIcons/32.png</image32x32>
-          <image36x36>appIcons/36.png</image36x36>
-          <image48x48>appIcons/48.png</image48x48>
-          <image57x57>appIcons/57.png</image57x57>
-          <image72x72>appIcons/72.png</image72x72>
-          <image114x114>appIcons/114.png</image114x114>
-          <image128x128>appIcons/128.png</image128x128>
-          <image512x512>appIcons/512.png</image512x512>
-  </icon>
+        <image16x16>appIcons/16.png</image16x16>
+        <image29x29>appIcons/29.png</image29x29>
+        <image32x32>appIcons/32.png</image32x32>
+        <image36x36>appIcons/36.png</image36x36>
+        <image48x48>appIcons/48.png</image48x48>
+        <image57x57>appIcons/57.png</image57x57>
+        <image72x72>appIcons/72.png</image72x72>
+        <image114x114>appIcons/114.png</image114x114>
+        <image128x128>appIcons/128.png</image128x128>
+        <image512x512>appIcons/512.png</image512x512>
+    </icon>
 
     <!-- Whether the application handles the update when a user double-clicks an update version of the AIR file (true),
          or the default AIR application installer handles the update (false). Optional. Default false. -->
@@ -166,70 +166,70 @@
 
     <!-- iOS specific capabilities -->
     <!--<iPhone>-->
-        <!-- A list of plist key/value pairs to be added to the application Info.plist -->
-        <!--<InfoAdditions>-->
-            <!--<![CDATA[-->
-            <!--<key>UIDeviceFamily</key>-->
-            <!--<array>-->
-                <!-- iPhone and iPod touch devices -->
-                <!--<string>1</string>-->
-                <!-- iPad devices -->
-                <!--<string>2</string>-->
-            <!--</array>-->
-            <!--<key>UIStatusBarStyle</key>-->
-            <!--<string>UIStatusBarStyleBlackOpaque</string>-->
-            <!--<key>UIRequiresPersistentWiFi</key>-->
-            <!--<string>YES</string>-->
-            <!--]]>-->
-        <!--</InfoAdditions>-->
+    <!-- A list of plist key/value pairs to be added to the application Info.plist -->
+    <!--<InfoAdditions>-->
+    <!--<![CDATA[-->
+    <!--<key>UIDeviceFamily</key>-->
+    <!--<array>-->
+    <!-- iPhone and iPod touch devices -->
+    <!--<string>1</string>-->
+    <!-- iPad devices -->
+    <!--<string>2</string>-->
+    <!--</array>-->
+    <!--<key>UIStatusBarStyle</key>-->
+    <!--<string>UIStatusBarStyleBlackOpaque</string>-->
+    <!--<key>UIRequiresPersistentWiFi</key>-->
+    <!--<string>YES</string>-->
+    <!--]]>-->
+    <!--</InfoAdditions>-->
 
-        <!-- A list of plist key/value pairs to be added to the application Entitlements.plist -->
-        <!--<Entitlements>
-            <![CDATA[
-            <key>keychain-access-groups</key>
-            <array>
-                <string></string>
-                <string></string>
-            </array>
-            ]]>
-        </Entitlements>-->
+    <!-- A list of plist key/value pairs to be added to the application Entitlements.plist -->
+    <!--<Entitlements>
+        <![CDATA[
+        <key>keychain-access-groups</key>
+        <array>
+            <string></string>
+            <string></string>
+        </array>
+        ]]>
+    </Entitlements>-->
 
-        <!-- Display Resolution for the app (either "standard" or "high"). Optional. Default "standard" -->
-        <!--<requestedDisplayResolution>high</requestedDisplayResolution>-->
+    <!-- Display Resolution for the app (either "standard" or "high"). Optional. Default "standard" -->
+    <!--<requestedDisplayResolution>high</requestedDisplayResolution>-->
     <!--</iPhone>-->
 
     <!-- Android specific tags that get passed to AndroidManifest.xml file. -->
     <!--<android>-->
-        <!--<manifestAdditions>-->
-            <!--<![CDATA[-->
-            <!--<manifest android:installLocation="auto">-->
-                <!--<uses-permission android:name="android.permission.INTERNET"/>-->
-                <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>-->
-                <!--<uses-permission android:name="android.permission.READ_PHONE_STATE"/>-->
-                <!--<uses-permission android:name="android.permission.VIBRATE"/>-->
-                <!--<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>-->
-                <!--<uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>-->
-                <!--<uses-permission android:name="android.permission.WAKE_LOCK"/>-->
-                <!--<uses-permission android:name="android.permission.CAMERA"/>-->
-                <!--<uses-permission android:name="android.permission.RECORD_AUDIO"/>-->
-                <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>-->
-                <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>-->
+    <!--<manifestAdditions>-->
+    <!--<![CDATA[-->
+    <!--<manifest android:installLocation="auto">-->
+    <!--<uses-permission android:name="android.permission.INTERNET"/>-->
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>-->
+    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE"/>-->
+    <!--<uses-permission android:name="android.permission.VIBRATE"/>-->
+    <!--<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>-->
+    <!--<uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>-->
+    <!--<uses-permission android:name="android.permission.WAKE_LOCK"/>-->
+    <!--<uses-permission android:name="android.permission.CAMERA"/>-->
+    <!--<uses-permission android:name="android.permission.RECORD_AUDIO"/>-->
+    <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>-->
+    <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>-->
 
-                <!--<uses-feature android:required="true" android:name="android.hardware.touchscreen.multitouch"/>-->
-                <!--<application android:enabled="true">
-                    <activity android:excludeFromRecents="false">
-                        <intent-filter>
-                            <action android:name="android.intent.action.MAIN"/>
-                            <category android:name="android.intent.category.LAUNCHER"/>
-                        </intent-filter>
-                    </activity>
-                </application>-->
-            <!--</manifest>-->
-            <!--]]>-->
-            <!--</manifestAdditions>-->
+    <!--<uses-feature android:required="true" android:name="android.hardware.touchscreen.multitouch"/>-->
+    <!--<application android:enabled="true">
+        <activity android:excludeFromRecents="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>-->
+    <!--</manifest>-->
+    <!--]]>-->
+    <!--</manifestAdditions>-->
 
-        <!-- Color depth for the app (either "32bit" or "16bit"). Optional. Default 16bit before namespace 3.0, 32bit after -->
-        <!--<colorDepth></colorDepth>-->
+    <!-- Color depth for the app (either "32bit" or "16bit"). Optional. Default 16bit before namespace 3.0, 32bit after -->
+    <!--<colorDepth></colorDepth>-->
     <!--</android>-->
 
 </application>
