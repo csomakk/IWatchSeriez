@@ -2,7 +2,7 @@
 <module type="Flex" version="4">
   <component name="FlexBuildConfigurationManager" active="IWatchSeriez">
     <configurations>
-      <configuration name="IWatchSeriez" target-platform="Desktop" main-class="IWatchSeriez" output-file="IWatchSeriez.swf" output-folder="$MODULE_DIR$/../out/production/IWatchSeriez">
+      <configuration name="IWatchSeriez" target-platform="Desktop" main-class="IWatchSeriez" output-file="IWatchSeriez.swf" output-folder="$MODULE_DIR$/install">
         <dependencies target-player="11.1">
           <sdk name="4.6.0" />
         </dependencies>
