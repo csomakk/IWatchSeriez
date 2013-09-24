@@ -19,6 +19,8 @@
 
         public var files:Dictionary = new Dictionary();
 
+        public var tempDirForHome:File = File.createTempDirectory();
+
         [Bindable]
         public var tabs:ArrayCollection = new ArrayCollection();
 
@@ -30,11 +32,25 @@
             saveDictionary();
         }
 
+        private function handleFolderChangeing():void {
+            if (fileList.selectedPath == tempDirForHome.nativePath) {
+                fileList.navigateUp();
+            }
+        }
+
         private function handleFolderChange():void {
             output.text = fileList.directory.nativePath;
             if (tabBar.selectedIndex != -1) {
                 tabs.setItemAt(output.text, tabBar.selectedIndex);
             }
+
+            var upFolder:UpFolder = new UpFolder();
+            if (fileList.directory.parent) {
+                upFolder.nativePath = fileList.directory.parent.nativePath;
+            } else {
+                upFolder.nativePath = tempDirForHome.nativePath;
+            }
+            fileList.dataProvider.addItemAt(upFolder, 0);
         }
 
         private function fileList_fileChooseHandler(event:FileEvent):void {
@@ -146,6 +162,7 @@
                            id="fileList"
                            fileChoose="fileList_fileChooseHandler(event);"
                            directoryChange="handleFolderChange();"
+                           directoryChanging="handleFolderChangeing();"
                            itemRenderer="FileSystemListItemRenderer"
                            allowMultipleSelection="true"
                 />
