@@ -32,7 +32,7 @@
             saveDictionary();
         }
 
-        private function handleFolderChangeing():void {
+        private function handleFolderChanging():void {
             if (fileList.selectedPath == tempDirForHome.nativePath) {
                 fileList.navigateUp();
             }
@@ -162,7 +162,7 @@
                            id="fileList"
                            fileChoose="fileList_fileChooseHandler(event);"
                            directoryChange="handleFolderChange();"
-                           directoryChanging="handleFolderChangeing();"
+                           directoryChanging="handleFolderChanging();"
                            itemRenderer="FileSystemListItemRenderer"
                            allowMultipleSelection="true"
                 />
