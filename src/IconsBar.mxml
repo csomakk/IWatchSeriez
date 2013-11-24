@@ -4,17 +4,17 @@
     <fx:Script><![CDATA[
         public var topLevelApp:IWatchSeriez;
         ]]></fx:Script>
-    <s:Image click="topLevelApp.setIconsForSelected(IconClasses.newIconName)" toolTip="new"
+    <s:Image click="topLevelApp.setIconsForSelected(IconClasses.newIconName)" toolTip="mark new"
              source="{IconClasses.newIcon}" height="32" width="32" smooth="true"/>
-    <s:Image click="topLevelApp.setIconsForSelected(IconClasses.questionIconName)" toolTip="started"
+    <s:Image click="topLevelApp.setIconsForSelected(IconClasses.questionIconName)" toolTip="mark started"
              source="{IconClasses.questionIcon}" height="32" width="32" smooth="true"/>
-    <s:Image click="topLevelApp.setIconsForSelected(IconClasses.halfIconName)" toolTip="unfinished"
+    <s:Image click="topLevelApp.setIconsForSelected(IconClasses.halfIconName)" toolTip="mark unfinished [H]"
              source="{IconClasses.halfIcon}" height="32" width="32" smooth="true"/>
-    <s:Image click="topLevelApp.setIconsForSelected(IconClasses.warningIconName)" toolTip="warning"
+    <s:Image click="topLevelApp.setIconsForSelected(IconClasses.warningIconName)" toolTip="mark warning"
              source="{IconClasses.warningIcon}" height="32" width="32" smooth="true"/>
-    <s:Image click="topLevelApp.setIconsForSelected(IconClasses.watchedIconName)" toolTip="watched"
+    <s:Image click="topLevelApp.setIconsForSelected(IconClasses.watchedIconName)" toolTip="mark watched [W]"
              source="{IconClasses.watchedIcon}" height="32" width="32" smooth="true"/>
-    <s:Image click="topLevelApp.setIconsForSelected(IconClasses.wontIconName)" toolTip="won't watch"
+    <s:Image click="topLevelApp.setIconsForSelected(IconClasses.wontIconName)" toolTip="mark won't watch [X]"
              source="{IconClasses.wontIcon}" height="32" width="32" smooth="true"/>
     <s:Image click="topLevelApp.setIconsForSelected(null)" toolTip="clear" source="{IconClasses.clearIcon}" height="32"
              width="32" smooth="true"/>

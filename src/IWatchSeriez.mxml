@@ -54,8 +54,12 @@
         }
 
         private function fileList_fileChooseHandler(event:FileEvent):void {
-            event.file.openWithDefaultApplication();
-            files[ event.file.nativePath ] = IconClasses.questionIconName;
+            openFile(event.file);
+        }
+
+        private function openFile(file:File):void {
+            file.openWithDefaultApplication();
+            files[ file.nativePath ] = IconClasses.questionIconName;
             fileList.refresh();
         }
 
@@ -138,6 +142,26 @@
             var urlReq:URLRequest = new URLRequest("https://github.com/csomakk/IWatchSeriez/");
             navigateToURL(urlReq, "_blank");
         }
+
+        private function keyDown(event:KeyboardEvent):void {
+            switch (event.keyCode) {
+                case Keyboard.H :
+                    setIconsForSelected(IconClasses.halfIconName);
+                    break;
+                case Keyboard.W :
+                    setIconsForSelected(IconClasses.watchedIconName);
+                    break;
+                case Keyboard.X :
+                    setIconsForSelected(IconClasses.wontIconName);
+                    break;
+                case Keyboard.N :
+                    setIconsForSelected(IconClasses.watchedIconName);
+                    fileList.selectedIndex++;
+                    openFile(fileList.selectedItem as File);
+                    break;
+            }
+
+        }
         ]]></fx:Script>
     <s:VGroup paddingBottom="10" paddingLeft="10" paddingTop="10" paddingRight="10"
               width="100%" height="100%">
@@ -165,6 +189,7 @@
                            directoryChanging="handleFolderChanging();"
                            itemRenderer="FileSystemListItemRenderer"
                            allowMultipleSelection="true"
+                           keyDown="keyDown(event);"
                 />
         <local:IconsBar topLevelApp="{this}"/>
     </s:VGroup>
