@@ -9,6 +9,8 @@
                        close="closeHandler(event)"
         >
     <fx:Script><![CDATA[
+        import air.update.ApplicationUpdaterUI;
+
         import mx.collections.ArrayCollection;
         import mx.events.FileEvent;
         import mx.events.FlexEvent;
@@ -21,6 +23,8 @@
 
         public var tempDirForHome:File = File.createTempDirectory();
 
+        internal var appUpdater:ApplicationUpdaterUI = new ApplicationUpdaterUI();
+
         [Bindable]
         public var tabs:ArrayCollection = new ArrayCollection();
 
@@ -30,6 +34,11 @@
             }
             fileList.refresh();
             saveDictionary();
+        }
+
+        private function updateApp():void {
+            appUpdater.configurationFile = new File("app:/updateConfig.xml");
+            appUpdater.initialize();
         }
 
         private function handleFolderChanging():void {
@@ -126,12 +135,12 @@
         }
 
         private function creationCompleteHandler(event:FlexEvent):void {
-
             loadLocation();
             tabBar.setSelectedToLast();
             fileList.directory = new File(tabBar.selectedItem);
             loadDictionary();
 
+            updateApp();
         }
 
         private function tabBar1_changeHandler(event:IndexChangeEvent):void {
