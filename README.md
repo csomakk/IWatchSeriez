@@ -14,6 +14,9 @@ __Adobe AIR is needed for install__, you can get it here: http://get.adobe.com/a
 
 More screenshots in the screenshot folder: https://github.com/csomakk/IWatchSeriez/tree/master/screenshots
 
+#Pro tip:
+Use 'N' keyboard shortcut to mark watched, and start playing next video
+
 #Help me!
 Please add any issue you find, and feel free to comment on the program here, or in email at csomakk@gmail.com
 
@@ -21,6 +24,8 @@ Please add any issue you find, and feel free to comment on the program here, or 
 
 I Watch Seriez is written in Adobe/Apache Flex 4.6.0. I personally use IntelliJIdea12 Ultimate as an IDE, I've included the project settings in this repo.
 Anybody is free to add anything, or contact me with questions at csomakk@gmail.com
+
+Also, feel free to visit my blog at http://codingmetaphors.com/
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/csomakk/IWatchSeriez/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
