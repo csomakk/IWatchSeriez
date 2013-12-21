@@ -2,8 +2,7 @@
 <s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009"
                        xmlns:s="library://ns.adobe.com/flex/spark"
                        xmlns:mx="library://ns.adobe.com/flex/mx"
-                       xmlns:local="*"
-                       xmlns:tabBar="tabbar.*"
+                       xmlns:tabBar="components.tabbar.*" xmlns:iconsbar="components.iconsBar.*"
                        showStatusBar="false"
                        creationComplete="creationCompleteHandler(event)"
                        close="closeHandler(event)"
@@ -11,11 +10,16 @@
     <fx:Script><![CDATA[
         import air.update.ApplicationUpdaterUI;
 
+        import components.fileList.UpFolder;
+
         import mx.collections.ArrayCollection;
         import mx.events.FileEvent;
         import mx.events.FlexEvent;
 
         import spark.events.IndexChangeEvent;
+
+        import utils.CsUtils;
+        import utils.IconClasses;
 
         public static var HOME_FOLDER_PATH:String = "root$:\\Computer";
 
@@ -81,7 +85,7 @@
             var file:File = File.applicationStorageDirectory;
             file = file.resolvePath("location.xml");
             if (file.exists) {
-                var xml:XML = new CsUtils().loadXML(file.url);
+                var xml:XML = CsUtils.loadXML(file.url);
                 if (xml != null) {
                     for each (var node:XML in xml.paths.path) {
                         var path:String = node.path;
@@ -105,7 +109,7 @@
                 node.path = tab;
                 (xml.paths as XMLList).appendChild(node);
             }
-            new CsUtils().saveAsXML(xml, file.url);
+            CsUtils.saveAsXML(xml, file.url);
         }
 
         public function saveDictionary():void {
@@ -118,14 +122,14 @@
                 node.iconString = files[key];
                 (xml.items as XMLList).appendChild(node);
             }
-            new CsUtils().saveAsXML(xml, file.url);
+            CsUtils.saveAsXML(xml, file.url);
         }
 
         public function loadDictionary():void {
             var file:File = File.applicationStorageDirectory;
             file = file.resolvePath("dictionary.xml");
             if (file.exists) {
-                var xml:XML = new CsUtils().loadXML(file.url);
+                var xml:XML = CsUtils.loadXML(file.url);
                 if (xml != null) {
                     for each (var node:XML in xml.items.item) {
                         files[String(node.path)] = String(node.iconString);
@@ -196,11 +200,11 @@
                            fileChoose="fileList_fileChooseHandler(event);"
                            directoryChange="handleFolderChange();"
                            directoryChanging="handleFolderChanging();"
-                           itemRenderer="FileSystemListItemRenderer"
+                           itemRenderer="components.fileList.FileSystemListItemRenderer"
                            allowMultipleSelection="true"
                            keyDown="keyDown(event);"
                 />
-        <local:IconsBar topLevelApp="{this}"/>
+        <iconsbar:IconsBar topLevelApp="{this}"/>
     </s:VGroup>
     <s:Image bottom="8" right="8" width="32" height="32"
              smooth="true"

@@ -2,6 +2,8 @@
 <s:HGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
           xmlns:s="library://ns.adobe.com/flex/spark">
     <fx:Script><![CDATA[
+        import utils.IconClasses;
+
         public var topLevelApp:IWatchSeriez;
         ]]></fx:Script>
     <s:Image click="topLevelApp.setIconsForSelected(IconClasses.newIconName)" toolTip="mark new"

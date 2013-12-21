@@ -1,4 +1,4 @@
-package {
+package components.fileList {
 import flash.filesystem.File;
 
 public class UpFolder extends File {

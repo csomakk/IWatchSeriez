@@ -1,4 +1,4 @@
-package tabbar {
+package components.tabbar {
 import flash.events.Event;
 
 public class TabEvent extends Event {

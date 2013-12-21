@@ -3,14 +3,17 @@
                 xmlns:s="library://ns.adobe.com/flex/spark"
                 width="100">
     <fx:Script><![CDATA[
+        import utils.IconClasses;
+        import utils.StringUtils;
+
         private function remove_clickHandler(event:MouseEvent):void {
             dispatchEvent(new TabEvent(itemIndex, TabEvent.CLOSE_EVENT));
         }
         ]]></fx:Script>
     <fx:Metadata>
-        [Event(name="close", type="tabbar.TabEvent")]
+        [Event(name="close", type="components.tabbar.TabEvent")]
     </fx:Metadata>
-    <s:Rect width="4" />
-    <s:Label text="{ StringUtils.trim(StringUtils.getLastPart(data as String)) }" verticalCenter="0" />
-    <s:Image source="{ IconClasses.closeTabIcon }" right="0" width="15" height="15" click="remove_clickHandler(event)" />
+    <s:Rect width="4"/>
+    <s:Label text="{ StringUtils.trim(StringUtils.getLastPart(data as String)) }" verticalCenter="0"/>
+    <s:Image source="{ IconClasses.closeTabIcon }" right="0" width="15" height="15" click="remove_clickHandler(event)"/>
 </s:ItemRenderer>

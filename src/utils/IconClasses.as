@@ -1,41 +1,41 @@
-package {
+package utils {
 public class IconClasses {
 
 
     [Embed(source="/new.png")]
     [Bindable]
     public static var newIcon:Class;
-    public static var newIconName:String = "IconClasses.newIcon";
+    public static var newIconName:String = "utils.IconClasses.newIcon";
 
     [Embed(source="/qestion.png")]
     [Bindable]
     public static var questionIcon:Class;
-    public static var questionIconName:String = "IconClasses.questionIcon";
+    public static var questionIconName:String = "utils.IconClasses.questionIcon";
 
     [Embed(source="/warning.png")]
     [Bindable]
     public static var warningIcon:Class;
-    public static var warningIconName:String = "IconClasses.warningIcon";
+    public static var warningIconName:String = "utils.IconClasses.warningIcon";
 
     [Embed(source="/watched.png")]
     [Bindable]
     public static var watchedIcon:Class;
-    public static var watchedIconName:String = "IconClasses.watchedIcon";
+    public static var watchedIconName:String = "utils.IconClasses.watchedIcon";
 
     [Embed(source="/wont.png")]
     [Bindable]
     public static var wontIcon:Class;
-    public static var wontIconName:String = "IconClasses.wontIcon";
+    public static var wontIconName:String = "utils.IconClasses.wontIcon";
 
     [Embed(source="/half.png")]
     [Bindable]
     public static var halfIcon:Class;
-    public static var halfIconName:String = "IconClasses.halfIcon";
+    public static var halfIconName:String = "utils.IconClasses.halfIcon";
 
     [Embed(source="/white.png")]
     [Bindable]
     public static var clearIcon:Class;
-    public static var clearIconName:String = "IconClasses.clearIcon";
+    public static var clearIconName:String = "utils.IconClasses.clearIcon";
 
     [Embed(source="/closeTab.png")]
     [Bindable]
