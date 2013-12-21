@@ -12,6 +12,8 @@
 
         import components.fileList.UpFolder;
 
+        import core.FileMetaDataBase;
+
         import mx.collections.ArrayCollection;
         import mx.events.FileEvent;
         import mx.events.FlexEvent;
@@ -23,8 +25,6 @@
 
         public static var HOME_FOLDER_PATH:String = "root$:\\Computer";
 
-        public var files:Dictionary = new Dictionary();
-
         public var tempDirForHome:File = File.createTempDirectory();
 
         internal var appUpdater:ApplicationUpdaterUI = new ApplicationUpdaterUI();
@@ -32,12 +32,14 @@
         [Bindable]
         public var tabs:ArrayCollection = new ArrayCollection();
 
+        public var fileMetas:FileMetaDataBase = new FileMetaDataBase();
+
         public function setIconsForSelected(iconString:String):void {
             for each (var f:File in fileList.selectedItems) {
-                files[ f.nativePath ] = iconString;
+                fileMetas.getMeta(f.nativePath).icon = iconString;
             }
-            fileList.refresh();
-            saveDictionary();
+            refreshFileList();
+            fileMetas.saveDictionary();
         }
 
         private function updateApp():void {
@@ -49,6 +51,11 @@
             if (fileList.selectedPath == tempDirForHome.nativePath) {
                 fileList.navigateUp();
             }
+        }
+
+        public function refreshFileList():void {
+            fileList.refresh();
+            handleFolderChange();
         }
 
         private function handleFolderChange():void {
@@ -72,13 +79,13 @@
 
         private function openFile(file:File):void {
             file.openWithDefaultApplication();
-            files[ file.nativePath ] = IconClasses.questionIconName;
-            fileList.refresh();
+            fileMetas.getMeta(file.nativePath).icon = IconClasses.questionIconName;
+            refreshFileList();
         }
 
         private function closeHandler(event:Event):void {
             saveLocation();
-            saveDictionary();
+            fileMetas.saveDictionary();
         }
 
         public function loadLocation():void {
@@ -112,37 +119,11 @@
             CsUtils.saveAsXML(xml, file.url);
         }
 
-        public function saveDictionary():void {
-            var file:File = File.applicationStorageDirectory;
-            file = file.resolvePath("dictionary.xml");
-            var xml:XML = new XML("<dictionary><items/></dictionary>");
-            for (var key:Object in files) {
-                var node:XML = new XML("<item><path/><iconString/></item>");
-                node.path = key;
-                node.iconString = files[key];
-                (xml.items as XMLList).appendChild(node);
-            }
-            CsUtils.saveAsXML(xml, file.url);
-        }
-
-        public function loadDictionary():void {
-            var file:File = File.applicationStorageDirectory;
-            file = file.resolvePath("dictionary.xml");
-            if (file.exists) {
-                var xml:XML = CsUtils.loadXML(file.url);
-                if (xml != null) {
-                    for each (var node:XML in xml.items.item) {
-                        files[String(node.path)] = String(node.iconString);
-                    }
-                }
-            }
-        }
-
         private function creationCompleteHandler(event:FlexEvent):void {
             loadLocation();
             tabBar.setSelectedToLast();
             fileList.directory = new File(tabBar.selectedItem);
-            loadDictionary();
+            fileMetas.loadDictionary();
 
             updateApp();
         }
@@ -193,7 +174,7 @@
         </s:HGroup>
         <tabBar:TabBar id="tabBar"
                        left="8" right="8" y="2"
-                       data="@{tabs}"
+                       data="@{ tabs }"
                        change="tabBar1_changeHandler(event)"/>
         <mx:FileSystemList width="100%" height="100%"
                            id="fileList"
