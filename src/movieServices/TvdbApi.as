@@ -69,7 +69,6 @@ public class TvdbApi {
         movieData.imdbID = result.Series.IMDB_ID.toString();
         movieData.tvdbID = result.Series.id.toString();
         movieData.fanArt = result.Series.fanart.toString();
-        movieData.posterURL = result.Series.poster.toString();
         movieData.name = result.Series.SeriesName.toString();
 
         movieData.seriezData.Airs_DayOfWeek = result.Series.Airs_DayOfWeek.toString();

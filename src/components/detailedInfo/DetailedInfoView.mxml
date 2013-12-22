@@ -1,10 +1,46 @@
 <?xml version="1.0"?>
-<s:ItemRenderer xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark">
+<s:ItemRenderer xmlns:fx="http://ns.adobe.com/mxml/2009"
+                xmlns:s="library://ns.adobe.com/flex/spark"
+                xmlns:util="utils.*"
+        >
     <fx:Script><![CDATA[
         import model.MovieData;
+
+        private function getPoster():void {
+            if (!data || !data.posterURL) return;
+            var req:URLRequest = new URLRequest(data.posterURL);
+            var ldr:Loader = new Loader();
+            ldr.load(req);
+            ldr.contentLoaderInfo.addEventListener(Event.COMPLETE, fileLoadComplete);
+            ldr.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR, onIOError);
+            trace("DetailedInfoView", data.posterURL);
+        }
+
+        private static function onIOError(event:IOErrorEvent):void {
+            trace(event.text);
+        }
+
+        private function fileLoadComplete(event:Event):void {
+            img.source = event.target.loader;
+        }
         ]]></fx:Script>
+    <fx:Declarations>
+        <util:Observe source="{ (data as MovieData).posterURL }"
+                      handler="{ getPoster }"/>
+    </fx:Declarations>
     <s:VGroup>
-        <s:Label text="{(data as MovieData).name}"/>
+        <s:Label text="{ (data as MovieData).name }"/>
+        <s:Label text="{ (data as MovieData).rating }"/>
+        <s:VGroup visible="{ (data as MovieData).seriezData.nextEpisode }">
+            <s:Label text="latest episode:"/>
+            <s:Label text="{ (data as MovieData).seriezData.latestEpisode.name }"/>
+            <s:Label id="dateLabel"
+                     text="{ (data as MovieData).seriezData.latestEpisode.firstAired }"/>
+            <s:Label text="next episode:"/>
+            <s:Label text="{ (data as MovieData).seriezData.nextEpisode.name }"/>
+            <s:Label text="{ (data as MovieData).seriezData.nextEpisode.firstAired }"/>
+        </s:VGroup>
+        <s:Image id="img"/>
     </s:VGroup>
 
 

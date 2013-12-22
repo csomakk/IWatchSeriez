@@ -38,6 +38,6 @@
                                width="100%" height="100%"/>
             <about:AboutView bottom="8" right="8"/>
         </s:Group>
-        <detailedinfoview:DetailedInfoView width="250" data="{ mainView.currentInfo }"/>
+        <detailedinfoview:DetailedInfoView width="150" data="{ mainView.currentInfo }"/>
     </s:HGroup>
 </s:WindowedApplication>

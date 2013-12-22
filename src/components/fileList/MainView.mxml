@@ -20,7 +20,7 @@
         import utils.IconClasses;
 
         [Bindable]
-        public var currentInfo:MovieData;
+        public var currentInfo:MovieData = new MovieData();
 
         public var fileMetaDB:FileMetaDataBase = IWatchSeriez.CONTEXT.fileMetaDB;
         [Bindable]
@@ -34,8 +34,6 @@
             tabBar.setSelectedToLast();
             fileList.directory = new File(tabBar.selectedItem);
 
-            currentInfo = new MovieData();
-            OmdbApi.getInfo("How I Met", currentInfo);
             isCreated = true;
         }
 
@@ -72,12 +70,34 @@
             }
         }
 
+        private function getInfo():void {
+            var parts:Array = output.text.split(/\\/);
+            var query:String = parts.pop();
+            query = query.replace(/\.|\(|\)|\-/gi, " "); //replace (.) to spaces
+            //query = query.replace(/\-/gi, " "); //replace (-) to spaces
+            var find:int = query.search(/S[0-9][0-9]/gi);
+            query = find > 10 ? query.slice(0, find) : query; //slice after season
+            find = query.search(/(19|20)\d{2}/gi);
+            query = find > 4 ? query.slice(0, find) : query; //slice after year 1900-2099
+            query = query.slice(0, 30);
+            trace("MainView.getInfo", query);
+            currentInfo = new MovieData();
+            OmdbApi.getInfo(query, currentInfo);
+
+        }
+
         private function handleFolderChange():void {
             output.text = fileList.directory.nativePath;
             if (tabBar.selectedIndex != -1 && isCreated) {
                 locationsDB.tabs.setItemAt(output.text, tabBar.selectedIndex);
             }
 
+            addUpFolder();
+
+            getInfo();
+        }
+
+        private function addUpFolder():void {
             var upFolder:UpFolder = new UpFolder();
             if (fileList.directory.parent) {
                 upFolder.nativePath = fileList.directory.parent.nativePath;
