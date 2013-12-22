@@ -2,22 +2,24 @@
 <s:HGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
           xmlns:s="library://ns.adobe.com/flex/spark">
     <fx:Script><![CDATA[
+        import components.fileList.MainView;
+
         import utils.IconClasses;
 
-        public var topLevelApp:IWatchSeriez;
+        public var mainView:MainView;
         ]]></fx:Script>
-    <s:Image click="topLevelApp.setIconsForSelected(IconClasses.newIconName)" toolTip="mark new"
+    <s:Image click="mainView.setIconsForSelected(IconClasses.newIconName)" toolTip="mark new"
              source="{IconClasses.newIcon}" height="32" width="32" smooth="true"/>
-    <s:Image click="topLevelApp.setIconsForSelected(IconClasses.questionIconName)" toolTip="mark started"
+    <s:Image click="mainView.setIconsForSelected(IconClasses.questionIconName)" toolTip="mark started"
              source="{IconClasses.questionIcon}" height="32" width="32" smooth="true"/>
-    <s:Image click="topLevelApp.setIconsForSelected(IconClasses.halfIconName)" toolTip="mark unfinished [H]"
+    <s:Image click="mainView.setIconsForSelected(IconClasses.halfIconName)" toolTip="mark unfinished [H]"
              source="{IconClasses.halfIcon}" height="32" width="32" smooth="true"/>
-    <s:Image click="topLevelApp.setIconsForSelected(IconClasses.warningIconName)" toolTip="mark warning"
+    <s:Image click="mainView.setIconsForSelected(IconClasses.warningIconName)" toolTip="mark warning"
              source="{IconClasses.warningIcon}" height="32" width="32" smooth="true"/>
-    <s:Image click="topLevelApp.setIconsForSelected(IconClasses.watchedIconName)" toolTip="mark watched [W]"
+    <s:Image click="mainView.setIconsForSelected(IconClasses.watchedIconName)" toolTip="mark watched [W]"
              source="{IconClasses.watchedIcon}" height="32" width="32" smooth="true"/>
-    <s:Image click="topLevelApp.setIconsForSelected(IconClasses.wontIconName)" toolTip="mark won't watch [X]"
+    <s:Image click="mainView.setIconsForSelected(IconClasses.wontIconName)" toolTip="mark won't watch [X]"
              source="{IconClasses.wontIcon}" height="32" width="32" smooth="true"/>
-    <s:Image click="topLevelApp.setIconsForSelected(null)" toolTip="clear" source="{IconClasses.clearIcon}" height="32"
+    <s:Image click="mainView.setIconsForSelected(null)" toolTip="clear" source="{IconClasses.clearIcon}" height="32"
              width="32" smooth="true"/>
 </s:HGroup>

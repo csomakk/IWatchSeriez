@@ -5,8 +5,6 @@ import flash.net.URLRequest;
 
 import model.MovieData;
 
-import mx.core.FlexGlobals;
-
 public class OmdbApi {
 
     public static function getInfo(query:String, result:MovieData):void {
@@ -41,7 +39,7 @@ public class OmdbApi {
     }
 
     private static function getSeriezData(movieData:MovieData):void {
-        (FlexGlobals.topLevelApplication as IWatchSeriez).tvdbApi.getDataByIMDB(movieData);
+        TvdbApi.getDataByIMDB(movieData);
     }
 
     private static function resultToMovieData(result:Object, movieData:MovieData):void {

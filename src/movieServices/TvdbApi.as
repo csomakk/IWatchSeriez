@@ -11,7 +11,7 @@ import model.SeriezData;
 public class TvdbApi {
 
     public static const API_KEY:String = "F0D98A3CE6AEF203";
-    private var mirrorPath:String = "http://thetvdb.com";
+    private static var mirrorPath:String = "http://thetvdb.com";
 
     public function TvdbApi() {
         getMirrors();
@@ -21,7 +21,7 @@ public class TvdbApi {
         trace("TvdbApi ERROR: ", event);
     }
 
-    private function getMirrors():void {
+    private static function getMirrors():void {
         var request:URLRequest = new URLRequest("http://thetvdb.com/api/" + API_KEY + "/mirrors.xml");
         var mirrorsLoader:URLLoader = new URLLoader();
         mirrorsLoader.load(request);
@@ -29,7 +29,7 @@ public class TvdbApi {
         mirrorsLoader.addEventListener(Event.COMPLETE, mirrorsLoaderComplete);
     }
 
-    private function mirrorsLoaderComplete(event:Event):void {
+    private static function mirrorsLoaderComplete(event:Event):void {
         var xml:XML = XML(event.target.data);
         var mirrorPaths:XMLList = xml.Mirror.mirrorpath;
         var selectedMirror:int = Math.random() * mirrorPaths.length();
@@ -37,7 +37,7 @@ public class TvdbApi {
     }
 
 
-    public function getDataByIMDB(movieData:MovieData):void {
+    public static function getDataByIMDB(movieData:MovieData):void {
         var request:URLRequest = new URLRequest(mirrorPath + "/api/GetSeriesByRemoteID.php?imdbid=" + movieData.imdbID);
         var getDataByIMDBLoader:MovieServiceURLLoader = new MovieServiceURLLoader(movieData);
         getDataByIMDBLoader.load(request);
@@ -45,7 +45,7 @@ public class TvdbApi {
         getDataByIMDBLoader.addEventListener(Event.COMPLETE, getDataByIMDBComplete);
     }
 
-    private function getDataByIMDBComplete(event:Event):void {
+    private static function getDataByIMDBComplete(event:Event):void {
         var msURLLoader:MovieServiceURLLoader = (event.target as MovieServiceURLLoader);
         var xml:XML = XML(msURLLoader.data);
         resultToMovieData(xml, msURLLoader.movieData);
@@ -56,7 +56,7 @@ public class TvdbApi {
         movieData.tvdbID = result.Series.seriesid;
     }
 
-    public function getDataByTVDB(movieData:MovieData):void {
+    public static function getDataByTVDB(movieData:MovieData):void {
         var request:URLRequest = new URLRequest(mirrorPath + "/api/" + API_KEY + "/series/" + movieData.tvdbID + "/all/en.xml");
         var getDataByTvdbLoader:MovieServiceURLLoader = new MovieServiceURLLoader(movieData);
         getDataByTvdbLoader.load(request);

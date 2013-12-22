@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<s:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark"
+          xmlns:tabBar="components.tabbar.*" xmlns:mx="library://ns.adobe.com/flex/mx"
+          xmlns:iconsbar="components.iconsBar.*"
+          creationComplete="creationCompleteHandler(event)"
+        >
+    <fx:Script><![CDATA[
+        import core.FileMetaDataBase;
+        import core.LocationDataBase;
+
+        import model.MovieData;
+
+        import movieServices.OmdbApi;
+
+        import mx.events.FileEvent;
+        import mx.events.FlexEvent;
+
+        import spark.events.IndexChangeEvent;
+
+        import utils.IconClasses;
+
+        [Bindable]
+        public var currentInfo:MovieData;
+
+        public var fileMetaDB:FileMetaDataBase = IWatchSeriez.CONTEXT.fileMetaDB;
+        [Bindable]
+        public var locationsDB:LocationDataBase = IWatchSeriez.CONTEXT.locationsDB;
+
+        public var tempDirForHome:File = File.createTempDirectory();
+
+        private var isCreated:Boolean;
+
+        private function creationCompleteHandler(event:FlexEvent):void {
+            tabBar.setSelectedToLast();
+            fileList.directory = new File(tabBar.selectedItem);
+
+            currentInfo = new MovieData();
+            OmdbApi.getInfo("How I Met", currentInfo);
+            isCreated = true;
+        }
+
+        public function openFile(file:File):void {
+            file.openWithDefaultApplication();
+            IWatchSeriez.CONTEXT.fileMetaDB.getMeta(file.nativePath).icon = IconClasses.questionIconName;
+            refreshFileList();
+        }
+
+        private function fileList_fileChooseHandler(event:FileEvent):void {
+            openFile(event.file);
+        }
+
+        private function tabBar1_changeHandler(event:IndexChangeEvent):void {
+            fileList.directory = new File(tabBar.selectedItem);
+        }
+
+        public function setIconsForSelected(iconString:String):void {
+            for each (var f:File in fileList.selectedItems) {
+                fileMetaDB.getMeta(f.nativePath).icon = iconString;
+            }
+            refreshFileList();
+            IWatchSeriez.CONTEXT.fileMetaDB.save();
+        }
+
+        public function refreshFileList():void {
+            fileList.refresh();
+            handleFolderChange();
+        }
+
+        private function handleFolderChanging():void {
+            if (fileList.selectedPath == tempDirForHome.nativePath) {
+                fileList.navigateUp();
+            }
+        }
+
+        private function handleFolderChange():void {
+            output.text = fileList.directory.nativePath;
+            if (tabBar.selectedIndex != -1 && isCreated) {
+                locationsDB.tabs.setItemAt(output.text, tabBar.selectedIndex);
+            }
+
+            var upFolder:UpFolder = new UpFolder();
+            if (fileList.directory.parent) {
+                upFolder.nativePath = fileList.directory.parent.nativePath;
+            } else {
+                upFolder.nativePath = tempDirForHome.nativePath;
+            }
+            fileList.dataProvider.addItemAt(upFolder, 0);
+        }
+
+        private function keyDown(event:KeyboardEvent):void {
+            switch (event.keyCode) {
+                case Keyboard.H :
+                    setIconsForSelected(IconClasses.halfIconName);
+                    break;
+                case Keyboard.W :
+                    setIconsForSelected(IconClasses.watchedIconName);
+                    break;
+                case Keyboard.X :
+                    setIconsForSelected(IconClasses.wontIconName);
+                    break;
+                case Keyboard.N :
+                    setIconsForSelected(IconClasses.watchedIconName);
+                    fileList.selectedIndex++;
+                    openFile(fileList.selectedItem as File);
+                    break;
+            }
+        }
+        ]]></fx:Script>
+    <s:HGroup width="100%">
+        <s:Button label="Up" click="fileList.navigateUp(); handleFolderChange();"
+                  enabled="{ fileList.canNavigateUp }"/>
+        <mx:FileSystemHistoryButton label="Back" dataProvider="{fileList.backHistory}"
+                                    enabled="{fileList.canNavigateBack}"
+                                    click="fileList.navigateBack();"
+                                    itemClick="fileList.navigateBack(event.index);"/>
+        <mx:FileSystemHistoryButton label="Forward" dataProvider="{fileList.forwardHistory}"
+                                    enabled="{fileList.canNavigateForward}"
+                                    click="fileList.navigateForward();"
+                                    itemClick="fileList.navigateForward(event.index);"/>
+        <s:TextInput id="output" width="100%"/>
+    </s:HGroup>
+    <tabBar:TabBar id="tabBar"
+                   left="8" right="8" y="2"
+                   data="@{ locationsDB.tabs }"
+                   change="tabBar1_changeHandler(event)"/>
+    <mx:FileSystemList width="100%" height="100%"
+                       id="fileList"
+                       fileChoose="fileList_fileChooseHandler(event);"
+                       directoryChange="handleFolderChange();"
+                       directoryChanging="handleFolderChanging();"
+                       itemRenderer="components.fileList.FileSystemListItemRenderer"
+                       allowMultipleSelection="true"
+                       keyDown="keyDown(event);"
+            />
+    <iconsbar:IconsBar mainView="{this}"/>
+</s:VGroup>

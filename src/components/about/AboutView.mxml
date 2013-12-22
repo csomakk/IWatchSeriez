@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark">
+    <fx:Script><![CDATA[
+        import utils.IconClasses;
+
+        private static function about_clickHandler(event:MouseEvent):void {
+            var urlReq:URLRequest = new URLRequest("https://github.com/csomakk/IWatchSeriez/");
+            navigateToURL(urlReq, "_blank");
+        }
+        ]]></fx:Script>
+    <s:Image width="32" height="32"
+             smooth="true"
+             source="{ IconClasses.githubIcon }"
+             toolTip="About IWatchSeriez"
+             click="about_clickHandler(event)"/>
+</s:Group>
