@@ -46,7 +46,6 @@ public class OmdbApi {
     private static function resultToMovieData(result:Object, movieData:MovieData):void {
         movieData.imdbID = result.imdbID;
         movieData.rating = result.imdbRating;
-        movieData.posterURL = result.Poster;
         movieData.type = result.Type;
         movieData.name = result.Title;
         movieData.seriezData = new SeriezData();

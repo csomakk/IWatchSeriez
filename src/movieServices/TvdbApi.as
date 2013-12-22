@@ -70,7 +70,7 @@ public class TvdbApi {
         movieData.tvdbID = result.Series.id.toString();
         movieData.fanArt = result.Series.fanart.toString();
         movieData.name = result.Series.SeriesName.toString();
-
+        movieData.posterURL = mirrorPath + "/banners/" + result.Series.poster.toString();
         movieData.seriezData.Airs_DayOfWeek = result.Series.Airs_DayOfWeek.toString();
         movieData.seriezData.Airs_Time = result.Series.Airs_Time.toString();
 

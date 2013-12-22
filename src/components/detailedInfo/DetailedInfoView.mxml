@@ -8,12 +8,12 @@
 
         private function getPoster():void {
             if (!data || !data.posterURL) return;
-            var req:URLRequest = new URLRequest(data.posterURL);
-            var ldr:Loader = new Loader();
-            ldr.load(req);
-            ldr.contentLoaderInfo.addEventListener(Event.COMPLETE, fileLoadComplete);
-            ldr.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR, onIOError);
+            var urlRequest:URLRequest = new URLRequest(data.posterURL);
+            var loaderInfo:Loader = new Loader();
+            loaderInfo.contentLoaderInfo.addEventListener(Event.COMPLETE, fileLoadComplete);
+            loaderInfo.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR, onIOError);
             trace("DetailedInfoView", data.posterURL);
+            loaderInfo.load(urlRequest);
         }
 
         private static function onIOError(event:IOErrorEvent):void {
@@ -28,7 +28,7 @@
         <util:Observe source="{ (data as MovieData).posterURL }"
                       handler="{ getPoster }"/>
     </fx:Declarations>
-    <s:VGroup>
+    <s:VGroup height="100%" width="140">
         <s:Label text="{ (data as MovieData).name }"/>
         <s:Label text="{ (data as MovieData).rating }"/>
         <s:VGroup visible="{ (data as MovieData).seriezData.nextEpisode }">
@@ -40,7 +40,7 @@
             <s:Label text="{ (data as MovieData).seriezData.nextEpisode.name }"/>
             <s:Label text="{ (data as MovieData).seriezData.nextEpisode.firstAired }"/>
         </s:VGroup>
-        <s:Image id="img"/>
+        <s:Image id="img" maxWidth="140" maxHeight="300"/>
     </s:VGroup>
 
 
