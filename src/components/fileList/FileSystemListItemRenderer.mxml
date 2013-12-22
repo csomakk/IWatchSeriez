@@ -2,7 +2,9 @@
 <s:ItemRenderer xmlns:fx="http://ns.adobe.com/mxml/2009"
                 dataChange="dataChangeHandler(event)"
                 implements="mx.controls.listClasses.IListItemRenderer"
-                xmlns:s="library://ns.adobe.com/flex/spark">
+                xmlns:s="library://ns.adobe.com/flex/spark"
+                clipAndEnableScrolling="true"
+        >
     <fx:Script><![CDATA[
         import core.FileMeta;
 

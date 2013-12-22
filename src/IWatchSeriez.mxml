@@ -32,7 +32,7 @@
             updateApp();
         }
         ]]></fx:Script>
-    <s:HGroup>
+    <s:HGroup width="100%" height="100%">
         <s:Group width="100%" height="100%">
             <filelist:MainView id="mainView" paddingBottom="10" paddingLeft="10" paddingTop="10" paddingRight="10"
                                width="100%" height="100%"/>
