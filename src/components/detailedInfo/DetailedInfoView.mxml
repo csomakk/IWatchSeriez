@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<s:ItemRenderer xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark">
+    <fx:Script><![CDATA[
+        import model.MovieData;
+        ]]></fx:Script>
+    <s:VGroup>
+        <s:Label text="{(data as MovieData).name}"/>
+    </s:VGroup>
+
+
+</s:ItemRenderer>

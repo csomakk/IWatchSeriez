@@ -3,6 +3,7 @@
                        xmlns:s="library://ns.adobe.com/flex/spark"
                        xmlns:mx="library://ns.adobe.com/flex/mx"
                        xmlns:tabBar="components.tabbar.*" xmlns:iconsbar="components.iconsBar.*"
+                       xmlns:detailedinfoview="components.detailedInfo.*"
                        showStatusBar="false"
                        creationComplete="creationCompleteHandler(event)"
                        close="closeHandler(event)"
@@ -13,6 +14,11 @@
         import components.fileList.UpFolder;
 
         import core.FileMetaDataBase;
+
+        import model.MovieData;
+
+        import movieServices.OmdbApi;
+        import movieServices.TvdbApi;
 
         import mx.collections.ArrayCollection;
         import mx.events.FileEvent;
@@ -33,6 +39,12 @@
         public var tabs:ArrayCollection = new ArrayCollection();
 
         public var fileMetas:FileMetaDataBase = new FileMetaDataBase();
+
+        public var omdbApi:OmdbApi = new OmdbApi();
+        public var tvdbApi:TvdbApi = new TvdbApi();
+
+        [Bindable]
+        public var currentInfo:MovieData;
 
         public function setIconsForSelected(iconString:String):void {
             for each (var f:File in fileList.selectedItems) {
@@ -88,6 +100,7 @@
             fileMetas.saveDictionary();
         }
 
+        //TODO remove theese?
         public function loadLocation():void {
             var file:File = File.applicationStorageDirectory;
             file = file.resolvePath("location.xml");
@@ -124,6 +137,9 @@
             tabBar.setSelectedToLast();
             fileList.directory = new File(tabBar.selectedItem);
             fileMetas.loadDictionary();
+
+            currentInfo = new MovieData();
+            OmdbApi.getInfo("How I Met", currentInfo);
 
             updateApp();
         }
@@ -192,4 +208,5 @@
              source="{ IconClasses.githubIcon }"
              toolTip="About IWatchSeriez"
              click="about_clickHandler(event)"/>
+    <detailedinfoview:DetailedInfoView data="{ currentInfo }"/>
 </s:WindowedApplication>
