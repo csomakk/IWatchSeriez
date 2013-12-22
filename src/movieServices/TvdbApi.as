@@ -97,8 +97,6 @@ public class TvdbApi {
         resultToSeriezData(xml, msURLLoader.movieData);
 
         getNextEpisode(msURLLoader.movieData.seriezData);
-        //TODO make episode and seriez classes
-        //TODO wire out to view
     }
 
     public static function twoDigitize(i:Number):String {
