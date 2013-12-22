@@ -14,31 +14,27 @@
         import components.fileList.UpFolder;
 
         import core.FileMetaDataBase;
+        import core.LocationDataBase;
 
         import model.MovieData;
 
         import movieServices.OmdbApi;
         import movieServices.TvdbApi;
 
-        import mx.collections.ArrayCollection;
         import mx.events.FileEvent;
         import mx.events.FlexEvent;
 
         import spark.events.IndexChangeEvent;
 
-        import utils.CsUtils;
         import utils.IconClasses;
-
-        public static var HOME_FOLDER_PATH:String = "root$:\\Computer";
 
         public var tempDirForHome:File = File.createTempDirectory();
 
         internal var appUpdater:ApplicationUpdaterUI = new ApplicationUpdaterUI();
 
+        public var fileMetaDB:FileMetaDataBase = new FileMetaDataBase();
         [Bindable]
-        public var tabs:ArrayCollection = new ArrayCollection();
-
-        public var fileMetas:FileMetaDataBase = new FileMetaDataBase();
+        public var locationsDB:LocationDataBase = new LocationDataBase();
 
         public var omdbApi:OmdbApi = new OmdbApi();
         public var tvdbApi:TvdbApi = new TvdbApi();
@@ -48,10 +44,10 @@
 
         public function setIconsForSelected(iconString:String):void {
             for each (var f:File in fileList.selectedItems) {
-                fileMetas.getMeta(f.nativePath).icon = iconString;
+                fileMetaDB.getMeta(f.nativePath).icon = iconString;
             }
             refreshFileList();
-            fileMetas.saveDictionary();
+            fileMetaDB.save();
         }
 
         private function updateApp():void {
@@ -73,7 +69,7 @@
         private function handleFolderChange():void {
             output.text = fileList.directory.nativePath;
             if (tabBar.selectedIndex != -1) {
-                tabs.setItemAt(output.text, tabBar.selectedIndex);
+                locationsDB.tabs.setItemAt(output.text, tabBar.selectedIndex);
             }
 
             var upFolder:UpFolder = new UpFolder();
@@ -91,52 +87,20 @@
 
         private function openFile(file:File):void {
             file.openWithDefaultApplication();
-            fileMetas.getMeta(file.nativePath).icon = IconClasses.questionIconName;
+            fileMetaDB.getMeta(file.nativePath).icon = IconClasses.questionIconName;
             refreshFileList();
         }
 
         private function closeHandler(event:Event):void {
-            saveLocation();
-            fileMetas.saveDictionary();
-        }
-
-        //TODO remove theese?
-        public function loadLocation():void {
-            var file:File = File.applicationStorageDirectory;
-            file = file.resolvePath("location.xml");
-            if (file.exists) {
-                var xml:XML = CsUtils.loadXML(file.url);
-                if (xml != null) {
-                    for each (var node:XML in xml.paths.path) {
-                        var path:String = node.path;
-                        if (path != HOME_FOLDER_PATH) {
-                            tabs.addItem(path);
-                        }
-                    }
-                }
-            }
-            if (tabs.length == 0) {
-                tabs.addItem(HOME_FOLDER_PATH);
-            }
-        }
-
-        public function saveLocation():void {
-            var file:File = File.applicationStorageDirectory;
-            file = file.resolvePath("location.xml");
-            var xml:XML = new XML("<location><paths/></location>");
-            for each (var tab:Object in tabs) {
-                var node:XML = new XML("<path/>");
-                node.path = tab;
-                (xml.paths as XMLList).appendChild(node);
-            }
-            CsUtils.saveAsXML(xml, file.url);
+            locationsDB.save();
+            fileMetaDB.save();
         }
 
         private function creationCompleteHandler(event:FlexEvent):void {
-            loadLocation();
+            locationsDB.load();
             tabBar.setSelectedToLast();
             fileList.directory = new File(tabBar.selectedItem);
-            fileMetas.loadDictionary();
+            fileMetaDB.load();
 
             currentInfo = new MovieData();
             OmdbApi.getInfo("How I Met", currentInfo);
@@ -190,7 +154,7 @@
         </s:HGroup>
         <tabBar:TabBar id="tabBar"
                        left="8" right="8" y="2"
-                       data="@{ tabs }"
+                       data="@{ locationsDB.tabs }"
                        change="tabBar1_changeHandler(event)"/>
         <mx:FileSystemList width="100%" height="100%"
                            id="fileList"

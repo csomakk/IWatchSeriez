@@ -14,7 +14,7 @@
         public var topLevelApp:IWatchSeriez = FlexGlobals.topLevelApplication as IWatchSeriez;
 
         private function dataChangeHandler(event:FlexEvent):void {
-            var meta:FileMeta = topLevelApp.fileMetas.getMeta((data as File).nativePath);
+            var meta:FileMeta = topLevelApp.fileMetaDB.getMeta((data as File).nativePath);
             markerBitmapImage.source = IconClasses.stringToIcon(meta.icon);
             markerBitmapImage.toolTip = meta.lastModified;
         }

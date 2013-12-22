@@ -21,7 +21,7 @@ public class FileMetaDataBase {
         return meta;
     }
 
-    public function saveDictionary():void {
+    public function save():void {
         var file:File = File.applicationStorageDirectory;
         file = file.resolvePath("dictionary.xml");
         var xml:XML = new XML("<dictionary><items/></dictionary>");
@@ -36,7 +36,7 @@ public class FileMetaDataBase {
         CsUtils.saveAsXML(xml, file.url);
     }
 
-    public function loadDictionary():void {
+    public function load():void {
         var file:File = File.applicationStorageDirectory;
         file = file.resolvePath("dictionary.xml");
         if (file.exists) {
