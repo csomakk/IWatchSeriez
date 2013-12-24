@@ -46,6 +46,7 @@
         private function onTabClose(event:TabEvent):void {
             if (data.length > 1) {
                 data.removeItemAt(event.itemIndex);
+                dispatchEvent(new IndexChangeEvent(IndexChangeEvent.CHANGE));
             }
         }
         ]]></fx:Script>
