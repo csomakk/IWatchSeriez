@@ -1,4 +1,5 @@
 .idea/workspace.xml
 install/*
 !install/IWatchSeriez.air
+!install/IWatchSeriez.exe
 !install/updateDescriptor.xml
