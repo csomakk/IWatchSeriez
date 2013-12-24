@@ -3,6 +3,7 @@ public class MovieData {
 
     public var imdbID:String;
     public var tvdbID:String;
+    public var rottenID:String;
     public var searchQuery:String;
     public var type:String;
     [Bindable]

@@ -36,6 +36,8 @@ public class OmdbApi {
         resultToMovieData(jsonResult, movieData);
         if (movieData.type == OmdbTypes.SERIEZ) {
             getSeriezData(movieData);
+        } else {
+            RottenTomatoesApi.getInfo(movieData.name, movieData);
         }
     }
 

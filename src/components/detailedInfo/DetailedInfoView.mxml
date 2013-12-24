@@ -2,6 +2,7 @@
 <s:ItemRenderer xmlns:fx="http://ns.adobe.com/mxml/2009"
                 xmlns:s="library://ns.adobe.com/flex/spark"
                 xmlns:util="utils.*"
+                autoDrawBackground="false"
         >
     <fx:Script><![CDATA[
         import model.MovieData;
@@ -28,7 +29,7 @@
         <util:Observe source="{ (data as MovieData).posterURL }"
                       handler="{ getPoster }"/>
     </fx:Declarations>
-    <s:VGroup height="100%" width="140">
+    <s:VGroup height="100%" width="140" y="10">
         <s:Label text="{ (data as MovieData).name }"/>
         <s:Label text="{ (data as MovieData).rating }"/>
         <s:VGroup visible="{ (data as MovieData).seriezData.nextEpisode }">
