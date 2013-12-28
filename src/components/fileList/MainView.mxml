@@ -5,6 +5,7 @@
           creationComplete="creationCompleteHandler(event)"
         >
     <fx:Script><![CDATA[
+        import core.ExcludedFiles;
         import core.FileMetaDataBase;
         import core.LocationDataBase;
 
@@ -94,7 +95,17 @@
 
             addUpFolder();
 
+            removeGivenFileTypes();
+
             getInfo();
+        }
+
+        private function removeGivenFileTypes():void {
+            for each (var f:File in fileList.dataProvider) {
+                if (f && ExcludedFiles.isExcluded(f.type)) {
+                    fileList.dataProvider.removeItemAt(fileList.dataProvider.getItemIndex(f));
+                }
+            }
         }
 
         private function addUpFolder():void {
