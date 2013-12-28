@@ -41,7 +41,7 @@
             <s:Label text="{ (data as MovieData).seriezData.nextEpisode.name }"/>
             <s:Label text="{ (data as MovieData).seriezData.nextEpisode.firstAired }"/>
         </s:VGroup>
-        <s:Image id="img" maxWidth="140" maxHeight="300"/>
+        <s:Image id="img" maxWidth="140" maxHeight="300" smooth="true"/>
     </s:VGroup>
 
 
