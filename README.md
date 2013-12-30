@@ -11,6 +11,7 @@ https://github.com/csomakk/IWatchSeriez/raw/master/install/IWatchSeriez.air
 __Adobe AIR is needed for install__, you can get it here: http://get.adobe.com/air/
 
 ![ScreenShot](https://raw.github.com/csomakk/IWatchSeriez/master/screenshots/v004.PNG)
+![ScreenShot](https://raw.github.com/csomakk/IWatchSeriez/master/screenshots/v007.PNG)
 
 More screenshots in the screenshot folder: https://github.com/csomakk/IWatchSeriez/tree/master/screenshots
 
