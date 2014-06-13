@@ -33,10 +33,7 @@
 
         private function creationCompleteHandler(event:FlexEvent):void {
             tabBar.setSelectedToLast();
-            var file:File = new File(tabBar.selectedItem);
-            if (file.exists) {
-                fileList.directory = file;
-            }
+            navigateTo(tabBar.selectedItem);
             isCreated = true;
         }
 
@@ -138,6 +135,18 @@
                     break;
             }
         }
+
+        public function navigateTo(url:String):void {
+            var file:File = new File(url);
+            if (file.exists) {
+                fileList.directory = file;
+            }
+            handleFolderChange();
+        }
+
+        private function output_enterHandler(event:FlexEvent):void {
+            navigateTo(output.text);
+        }
         ]]></fx:Script>
     <s:HGroup width="100%">
         <s:Button label="Up" click="fileList.navigateUp(); handleFolderChange();"
@@ -150,7 +159,7 @@
                                     enabled="{fileList.canNavigateForward}"
                                     click="fileList.navigateForward();"
                                     itemClick="fileList.navigateForward(event.index);"/>
-        <s:TextInput id="output" width="100%"/>
+        <s:TextInput id="output" width="100%" enter="output_enterHandler(event)"/>
     </s:HGroup>
     <tabBar:TabBar id="tabBar"
                    left="8" right="8" y="2"
