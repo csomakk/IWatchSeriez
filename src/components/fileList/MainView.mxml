@@ -33,8 +33,10 @@
 
         private function creationCompleteHandler(event:FlexEvent):void {
             tabBar.setSelectedToLast();
-            fileList.directory = new File(tabBar.selectedItem);
-
+            var file:File = new File(tabBar.selectedItem);
+            if (file.exists) {
+                fileList.directory = file;
+            }
             isCreated = true;
         }
 
