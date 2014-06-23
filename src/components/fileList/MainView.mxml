@@ -133,7 +133,20 @@
                     fileList.selectedIndex++;
                     openFile(fileList.selectedItem as File);
                     break;
+                case Keyboard.A :
+                    selectAll();
+                    break;
             }
+        }
+
+        public function selectAll():void {
+            var indices:Array = [];
+
+            for (var i:int = 1; i < fileList.dataProvider.length; i++) {
+                indices.push(i);
+            }
+
+            fileList.selectedIndices = indices;
         }
 
         public function navigateTo(url:String):void {
