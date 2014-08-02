@@ -20,6 +20,7 @@ More screenshots in the screenshot folder: https://github.com/csomakk/IWatchSeri
 - auto mark on opening a file
 - remove .nfo, .srt, .sfv, sample
 - multiple tabs, to track multiple seriez at once.
+- recieve last aired episode info, and possible airing date of next episode.
 
 #Pro tip:
 Use 'N' keyboard shortcut to mark watched, and start playing next video
