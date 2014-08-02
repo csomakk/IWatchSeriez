@@ -15,6 +15,12 @@ __Adobe AIR is needed for install__, you can get it here: http://get.adobe.com/a
 
 More screenshots in the screenshot folder: https://github.com/csomakk/IWatchSeriez/tree/master/screenshots
 
+#Features
+- mark a file with icons
+- auto mark on opening a file
+- remove .nfo, .srt, .sfv, sample
+- multiple tabs, to track multiple seriez at once.
+
 #Pro tip:
 Use 'N' keyboard shortcut to mark watched, and start playing next video
 
