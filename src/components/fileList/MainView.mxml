@@ -52,10 +52,13 @@
         }
 
         public function setIconsForSelected(iconString:String):void {
-            for each (var f:File in fileList.selectedItems) {
-                fileMetaDB.getMeta(f.nativePath).icon = iconString;
+            for each (var file:File in fileList.selectedItems) {
+                fileMetaDB.getMeta(file.nativePath).icon = iconString;
             }
             refreshFileList();
+            if (fileList.dataProvider.length == 2) {
+                fileMetaDB.getMeta(file.parent.nativePath).icon = iconString;
+            }
             IWatchSeriez.CONTEXT.fileMetaDB.save();
         }
 
