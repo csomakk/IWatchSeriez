@@ -100,10 +100,15 @@
         }
 
         private function removeGivenFileTypes():void {
-            for each (var f:File in fileList.dataProvider) {
-                if (f && ExcludedFiles.isExcluded(f.type)) {
-                    fileList.dataProvider.removeItemAt(fileList.dataProvider.getItemIndex(f));
+            var toRemove:Vector.<File> = new Vector.<File>();
+            var file:File;
+            for each (file in fileList.dataProvider) {
+                if (file && (ExcludedFiles.isExcludedType(file.type) || ExcludedFiles.isExcludedName(file.name))) {
+                    toRemove.push(file);
                 }
+            }
+            for each (file in toRemove) {
+                fileList.dataProvider.removeItemAt(fileList.dataProvider.getItemIndex(file));
             }
         }
 
