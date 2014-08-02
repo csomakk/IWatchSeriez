@@ -99,7 +99,19 @@
 
             removeGivenFileTypes();
 
+            setSelectedToPreviousFolder();
+
             getInfo();
+        }
+
+        private function setSelectedToPreviousFolder():void {
+            var history:Array = fileList.backHistory;
+            if (history.length < 1) return;
+            var prevFile:File = history[0];
+            if (prevFile.parent.nativePath == fileList.directory.nativePath) {
+                fileList.selectedItem = prevFile;
+                fileList.scrollToIndex(fileList.selectedIndex);
+            }
         }
 
         private function removeGivenFileTypes():void {
