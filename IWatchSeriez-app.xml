@@ -9,14 +9,14 @@
     <!-- The name that is displayed in the AIR application installer. May have multiple values for each language. See samples or xsd schema file. Optional. -->
     <name>IWatchSeriez</name>
 
-    <versionNumber>0.6.0</versionNumber>
+    <versionNumber>0.7.0</versionNumber>
 
     <description>IWatchSeriez is a file browser optimised for watching seriez. more on it at
         https://github.com/csomakk/IWatchSeriez
     </description>
     <copyright>Gabor Csomak</copyright>
 
-    <supportedProfiles>extendedDesktop</supportedProfiles>
+    <supportedProfiles>extendedDesktop desktop</supportedProfiles>
 
     <!-- Identifies the ActionScript extensions used by an application. -->
     <!--<extensions>
