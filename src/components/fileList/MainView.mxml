@@ -23,9 +23,9 @@
         [Bindable]
         public var currentInfo:MovieData = new MovieData();
 
-        public var fileMetaDB:FileMetaDataBase = IWatchSeriez.CONTEXT.fileMetaDB;
         [Bindable]
         public var locationsDB:LocationDataBase = IWatchSeriez.CONTEXT.locationsDB;
+        public var fileMetaDB:FileMetaDataBase = IWatchSeriez.CONTEXT.fileMetaDB;
 
         public var tempDirForHome:File = File.createTempDirectory();
 
@@ -207,5 +207,5 @@
                        allowMultipleSelection="true"
                        keyDown="keyDown(event);"
             />
-    <iconsbar:IconsBar mainView="{this}"/>
+    <iconsbar:IconsBar mainView="{ this }"/>
 </s:VGroup>

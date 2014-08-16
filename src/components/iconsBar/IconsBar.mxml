@@ -7,6 +7,10 @@
         import utils.IconClasses;
 
         public var mainView:MainView;
+
+        private function onOpenInVLCClick(event:MouseEvent):void {
+            IWatchSeriez.CONTEXT.vlcManager.addToPlaylist(mainView.fileList.selectedItems);
+        }
         ]]></fx:Script>
     <s:Image click="mainView.setIconsForSelected(IconClasses.newIconName)" toolTip="mark new"
              source="{IconClasses.newIcon}" height="32" width="32" smooth="true"/>
@@ -20,6 +24,13 @@
              source="{IconClasses.watchedIcon}" height="32" width="32" smooth="true"/>
     <s:Image click="mainView.setIconsForSelected(IconClasses.wontIconName)" toolTip="mark won't watch [X]"
              source="{IconClasses.wontIcon}" height="32" width="32" smooth="true"/>
-    <s:Image click="mainView.setIconsForSelected(null)" toolTip="clear" source="{IconClasses.clearIcon}" height="32"
-             width="32" smooth="true"/>
+    <s:Image click="mainView.setIconsForSelected(IconClasses.heartIconName)" toolTip="love"
+             source="{IconClasses.heartIcon}" height="32" width="32" smooth="true"/>
+    <s:Image click="mainView.setIconsForSelected(IconClasses.starIconName)" toolTip="love"
+             source="{IconClasses.starIcon}" height="32" width="32" smooth="true"/>
+    <s:Image click="mainView.setIconsForSelected(null)" toolTip="clear"
+             source="{IconClasses.clearIcon}" height="32" width="32" smooth="true"/>
+    <s:Image width="64"/>
+    <s:Image click="onOpenInVLCClick(event)" toolTip="openInVLC"
+             source="{ IconClasses.vlcPlaylistIcon }" height="32" width="32" smooth="true"/>
 </s:HGroup>

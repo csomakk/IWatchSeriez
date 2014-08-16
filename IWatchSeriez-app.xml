@@ -16,6 +16,8 @@
     </description>
     <copyright>Gabor Csomak</copyright>
 
+    <supportedProfiles>extendedDesktop</supportedProfiles>
+
     <!-- Identifies the ActionScript extensions used by an application. -->
     <!--<extensions>
         <extensionID></extensionID>

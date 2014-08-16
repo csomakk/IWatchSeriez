@@ -35,7 +35,21 @@ public class IconClasses {
     [Embed(source="/white.png")]
     [Bindable]
     public static var clearIcon:Class;
-    public static var clearIconName:String = "utils.IconClasses.clearIcon";
+
+    [Embed(source="/heart.png")]
+    [Bindable]
+    public static var heartIcon:Class;
+    public static var heartIconName:String = "utils.IconClasses.heartIcon";
+
+    [Embed(source="/star.png")]
+    [Bindable]
+    public static var starIcon:Class;
+    public static var starIconName:String = "utils.IconClasses.starIcon";
+
+    [Embed(source="/vlcplaylist.png")]
+    [Bindable]
+    public static var vlcPlaylistIcon:Class;
+    public static var vlcPlaylistIconName:String = "utils.IconClasses.vlcPlaylistIcon";
 
     [Embed(source="/closeTab.png")]
     [Bindable]
@@ -57,6 +71,9 @@ public class IconClasses {
         if (name.search(watchedIconName) == 0) return watchedIcon;
         if (name.search(wontIconName) == 0) return wontIcon;
         if (name.search(halfIconName) == 0) return halfIcon;
+        if (name.search(starIconName) == 0) return starIcon;
+        if (name.search(heartIconName) == 0) return heartIcon;
+        if (name.search(vlcPlaylistIconName) == 0) return vlcPlaylistIcon;
         return null;
     }
 
