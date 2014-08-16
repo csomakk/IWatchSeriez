@@ -1,17 +1,19 @@
 IWatchSeriez
 ============
-
-I Watch Seriez is a file browser to help you keep track of your progress, and much more, now with multiple tab support!
+Have you ever forgot, where did you left your favourite series? Have you ever spent hours opening episode after episode to see which of them you remember? Do you have tons of movies in the your download folder, but don't remember which ones you saw? Then IWatchSeriez is for you! 
+I Watch Seriez is a file browser to help you keep track of your progress, latest and next episode info, and much more!
 
 #Download
 
 Latest installer is always available here: 
+https://github.com/csomakk/IWatchSeriez/raw/master/install/IWatchSeriez.exe
+
+or if you prefer the AIR version, here:
 https://github.com/csomakk/IWatchSeriez/raw/master/install/IWatchSeriez.air
+this needs __Adobe AIR is for install__, what you can get here: http://get.adobe.com/air/
 
-__Adobe AIR is needed for install__, you can get it here: http://get.adobe.com/air/
-
-![ScreenShot](https://raw.github.com/csomakk/IWatchSeriez/master/screenshots/v004.PNG)
-![ScreenShot](https://raw.github.com/csomakk/IWatchSeriez/master/screenshots/v007.PNG)
+![ScreenShot](https://raw.github.com/csomakk/IWatchSeriez/master/screenshots/v009.PNG)
+![ScreenShot](https://raw.github.com/csomakk/IWatchSeriez/master/screenshots/v008.PNG)
 
 More screenshots in the screenshot folder: https://github.com/csomakk/IWatchSeriez/tree/master/screenshots
 
