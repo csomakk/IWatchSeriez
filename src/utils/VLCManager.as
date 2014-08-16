@@ -32,6 +32,7 @@ public class VLCManager {
                 args.push(file.nativePath);
                 IWatchSeriez.CONTEXT.fileMetaDB.getMeta(file.nativePath).icon = IconClasses.vlcPlaylistIconName;
             }
+            IWatchSeriez.CONTEXT.fileMetaDB.save();
             args.push(ARG_ENQUEUE);
             //args.push(ARG_FULL_SCREEN); //TODO if there will be a settings page
             nativeProcessStartupInfo.arguments = args;
