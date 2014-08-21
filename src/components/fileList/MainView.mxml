@@ -57,7 +57,7 @@
                 fileMetaDB.getMeta(file.nativePath).icon = iconString;
             }
             refreshFileList();
-            if (fileList.dataProvider.length == 2) {
+            if (fileList.dataProvider.length == 2 && file) {
                 fileMetaDB.getMeta(file.parent.nativePath).icon = iconString;
             }
             IWatchSeriez.CONTEXT.fileMetaDB.save();
@@ -109,7 +109,7 @@
             var history:Array = fileList.backHistory;
             if (history.length < 1) return;
             var prevFile:File = history[0];
-            if (prevFile.parent.nativePath == fileList.directory.nativePath) {
+            if (prevFile.parent && prevFile.parent.nativePath == fileList.directory.nativePath) {
                 fileList.selectedItem = prevFile;
                 fileList.scrollToIndex(fileList.selectedIndex);
             }
