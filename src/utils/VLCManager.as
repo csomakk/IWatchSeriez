@@ -12,9 +12,20 @@ public class VLCManager {
     protected var mediaPlayer:File;
     protected var nativeProcessStartupInfo:NativeProcessStartupInfo;
 
+	[Bindable]
+	public function get vlcAvailable():Boolean {
+		return mediaPlayer && NativeProcess.isSupported;
+	}
+
     public function VLCManager() {
         mediaPlayer = new File();
-        mediaPlayer = mediaPlayer.resolvePath(VLC_PATH); //TODO settings
+	    try {
+            mediaPlayer = mediaPlayer.resolvePath(VLC_PATH); //TODO settings
+	    } catch (e:Error) {
+		    IWatchSeriez.CONTEXT.mainView.alert("Couldn't resolve VLC path. Should be at " + VLC_PATH, "Error opening VLC");
+		    //TODO handle this. settings, mac
+		    return;
+	    }
         if (NativeProcess.isSupported) {
             nativeProcessStartupInfo = new NativeProcessStartupInfo();
             nativeProcessStartupInfo.executable = mediaPlayer;

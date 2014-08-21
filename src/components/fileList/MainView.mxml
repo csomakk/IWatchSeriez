@@ -13,6 +13,8 @@
 
         import movieServices.OmdbApi;
 
+        import mx.controls.Alert;
+
         import mx.events.FileEvent;
         import mx.events.FlexEvent;
 
@@ -35,6 +37,16 @@
             tabBar.setSelectedToLast();
             navigateTo(tabBar.selectedItem);
             isCreated = true;
+        }
+
+        public function alert(text:String = "", title:String = "",
+                flags:uint = 0x4 /* Alert.OK */,
+                parent:Sprite = null,
+                closeHandler:Function = null,
+                iconClass:Class = null,
+                defaultButtonFlag:uint = 0x4 /* Alert.OK */,
+                moduleFactory:IFlexModuleFactory = null):Alert {
+            return Alert.show(text, title, flags, parent, closeHandler, iconClass, defaultButtonFlag, moduleFactory );
         }
 
         public function openFile(file:File):void {
