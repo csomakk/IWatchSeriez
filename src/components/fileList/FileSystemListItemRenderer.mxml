@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <s:ItemRenderer xmlns:fx="http://ns.adobe.com/mxml/2009"
-                dataChange="dataChangeHandler(event)"
-                implements="mx.controls.listClasses.IListItemRenderer"
                 xmlns:s="library://ns.adobe.com/flex/spark"
+                implements="mx.controls.listClasses.IListItemRenderer"
+                dataChange="dataChangeHandler(event)"
                 clipAndEnableScrolling="true"
         >
     <fx:Script><![CDATA[
@@ -22,8 +22,8 @@
         }
         ]]></fx:Script>
     <s:HGroup>
-        <s:Image source="{ (data.icon as Icon).bitmaps[1] }"/>
-        <s:Image id="markerBitmapImage" height="16" width="16" smooth="true"/>
+        <s:Image source="{ (data.icon as Icon).bitmaps[1] }" height="16" width="16" smooth="true" />
+        <s:Image id="markerBitmapImage" height="16" width="16" smooth="true" />
         <s:Label text="{ data.name }"/>
     </s:HGroup>
 </s:ItemRenderer>
