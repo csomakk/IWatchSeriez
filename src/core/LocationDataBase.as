@@ -1,5 +1,6 @@
 package core {
 import flash.filesystem.File;
+import flash.system.Capabilities;
 
 import mx.collections.ArrayCollection;
 
@@ -7,13 +8,17 @@ import utils.CsUtils;
 
 public class LocationDataBase {
 
-    public static var HOME_FOLDER_PATH:String = "root$:\\Computer";
+    public static var HOME_FOLDER_PATH_WIN:String = "root$:\\Computer";
+    public static var HOME_FOLDER_PATH_MAC:String = "/";
 
     [Bindable]
     public var tabs:ArrayCollection = new ArrayCollection();
 
-    public function LocationDataBase() {
-    }
+	public static function get HOME_FOLDER_PATH():String {
+		if (Capabilities.os.search("Mac") == 0) return HOME_FOLDER_PATH_MAC;
+		if (Capabilities.os.search("Win") == 0) return HOME_FOLDER_PATH_WIN;
+		return "";
+	}
 
     public function load():void {
         var file:File = File.applicationStorageDirectory;
