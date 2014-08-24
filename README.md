@@ -1,18 +1,21 @@
 IWatchSeriez
 ============
 Have you ever forgot, where did you left your favourite series? Have you ever spent hours opening episode after episode to see which of them you remember? Do you have tons of movies in the your download folder, but don't remember which ones you saw? Then IWatchSeriez is for you! 
-I Watch Seriez is a file browser to help you keep track of your progress, latest and next episode info, and much more!
+I Watch Seriez is a file browser to help you keep track of your progress, latest and next episode info, and much more! Its open-source, and supports bluetooth!
 
 #Download
 
-Latest installer is always available here: 
+Latest installer (Mac Windows) is always available here: 
+https://github.com/csomakk/IWatchSeriez/raw/master/install/IWatchSeriez.air
+This needs to have __Adobe AIR installed__, what you can get here: http://get.adobe.com/air/
+
+There is also an .exe installer, but the preferred version is the above one.
 https://github.com/csomakk/IWatchSeriez/raw/master/install/IWatchSeriez.exe
 
-or if you prefer the AIR version, here:
-https://github.com/csomakk/IWatchSeriez/raw/master/install/IWatchSeriez.air
-this needs __Adobe AIR is for install__, what you can get here: http://get.adobe.com/air/
+Feel free to provide feedback at csomakk@gmail.com
 
 ![ScreenShot](https://raw.github.com/csomakk/IWatchSeriez/master/screenshots/v009.PNG)
+![ScreenShot](https://raw.github.com/csomakk/IWatchSeriez/master/screenshots/v010.PNG)
 ![ScreenShot](https://raw.github.com/csomakk/IWatchSeriez/master/screenshots/v008.PNG)
 
 More screenshots in the screenshot folder: https://github.com/csomakk/IWatchSeriez/tree/master/screenshots
@@ -23,20 +26,25 @@ More screenshots in the screenshot folder: https://github.com/csomakk/IWatchSeri
 - remove .nfo, .srt, .sfv, sample
 - multiple tabs, to track multiple seriez at once.
 - recieve last aired episode info, and possible airing date of next episode.
+- IMDB, OMDB, TVDB, Rottentomatoes connection
+
+#Future plans
+I plan to keep the program updated, so if you have any suggestion, feel free to contact me at csomakk@gmail.com
+planned features:
+- retina display
+- sync with mobile (this will need lots of resources)
+- settings panel
+- other enhancements
 
 #Pro tip:
 Use 'N' keyboard shortcut to mark watched, and start playing next video
 
 #Help me!
-Please add any issue you find, and feel free to comment on the program here, or in email at csomakk@gmail.com
+Please add any issue you find, and feel free to comment on the program here, or in email at csomakk@gmail.com, and If this program made your life easier, please send a tip on https://www.gittip.com/csomakk/ 
 
 #FOR DEVS:
-
 I Watch Seriez is written in Adobe/Apache Flex 4.6.0. I personally use IntelliJIdea12 Ultimate as an IDE, I've included the project settings in this repo.
 Anybody is free to add anything, or contact me with questions at csomakk@gmail.com
-
-Also, feel free to visit my blog at http://codingmetaphors.com/
-
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/csomakk/IWatchSeriez/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
