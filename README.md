@@ -5,8 +5,10 @@ I Watch Seriez is a file browser to help you keep track of your progress, latest
 
 #Download and install
 1) IWatchSeriez needs Adobe AIR to run. Don't worry, it won't slow down anything. Grab it here: http://get.adobe.com/air/
+
 2) __Latest Mac and Windowns installer__ is always available here: 
 __https://github.com/csomakk/IWatchSeriez/raw/master/install/IWatchSeriez.air__
+
 
 There is also an .exe installer if you don't want .air, but the preferred version is the AIR one.
 https://github.com/csomakk/IWatchSeriez/raw/master/install/IWatchSeriez.exe
