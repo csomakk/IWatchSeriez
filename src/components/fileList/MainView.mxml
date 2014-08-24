@@ -165,8 +165,13 @@
         }
 
         public function navigateTo(url:String):void {
-            var file:File = new File(url);
-            if (file.exists) {
+            var file:File;
+            try {
+                file = new File(url);
+            } catch (e:Error) {
+                Alert.show("Can't open url: " + url, "Can't navigate");
+            }
+            if (file && file.exists) {
                 fileList.directory = file;
             }
             handleFolderChange();
