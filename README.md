@@ -5,11 +5,11 @@ I Watch Seriez is a file browser to help you keep track of your progress, latest
 
 #Download
 
-Latest installer (Mac Windows) is always available here: 
-https://github.com/csomakk/IWatchSeriez/raw/master/install/IWatchSeriez.air
-This needs to have __Adobe AIR installed__, what you can get here: http://get.adobe.com/air/
+__Latest installer__ (Mac Windows) is always available here: 
+__https://github.com/csomakk/IWatchSeriez/raw/master/install/IWatchSeriez.air__
+This needs to __have Adobe AIR installed__, what you can get here: http://get.adobe.com/air/
 
-There is also an .exe installer, but the preferred version is the above one.
+Or there is also an __.exe installer__, but the preferred version is the above one.
 https://github.com/csomakk/IWatchSeriez/raw/master/install/IWatchSeriez.exe
 
 Feel free to provide feedback at csomakk@gmail.com
