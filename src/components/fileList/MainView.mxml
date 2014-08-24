@@ -39,14 +39,8 @@
             isCreated = true;
         }
 
-        public function alert(text:String = "", title:String = "",
-                flags:uint = 0x4 /* Alert.OK */,
-                parent:Sprite = null,
-                closeHandler:Function = null,
-                iconClass:Class = null,
-                defaultButtonFlag:uint = 0x4 /* Alert.OK */,
-                moduleFactory:IFlexModuleFactory = null):Alert {
-            return Alert.show(text, title, flags, parent, closeHandler, iconClass, defaultButtonFlag, moduleFactory );
+        public function alert(text:String = "", title:String = "", flags:uint = 0x4 /* Alert.OK */, parent:Sprite = null, closeHandler:Function = null, iconClass:Class = null, defaultButtonFlag:uint = 0x4 /* Alert.OK */, moduleFactory:IFlexModuleFactory = null):Alert {
+            return Alert.show(text, title, flags, parent, closeHandler, iconClass, defaultButtonFlag, moduleFactory);
         }
 
         public function openFile(file:File):void {
@@ -87,19 +81,7 @@
         }
 
         private function getInfo():void {
-            var parts:Array = output.text.split(/\\/);
-            var query:String = parts.pop();
-            query = query.replace(/\.|\(|\)|\-/gi, " "); //replace (.) to spaces
-            //query = query.replace(/\-/gi, " "); //replace (-) to spaces
-            var find:int = query.search(/S[0-9][0-9]/gi);
-            query = find > 10 ? query.slice(0, find) : query; //slice after season
-            find = query.search(/(19|20)\d{2}/gi);
-            query = find > 4 ? query.slice(0, find) : query; //slice after year 1900-2099
-            query = query.slice(0, 30);
-            trace("MainView.getInfo", query);
-            currentInfo = new MovieData();
-            OmdbApi.getInfo(query, currentInfo);
-
+            IWatchSeriez.CONTEXT.infoQueryCache.getInfo(output.text);
         }
 
         private function handleFolderChange():void {
