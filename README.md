@@ -28,7 +28,7 @@ More screenshots in the screenshot folder: https://github.com/csomakk/IWatchSeri
 - multiple tabs, to track multiple seriez at once.
 - recieve last aired episode info, and possible airing date of next episode.
 - IMDB, OMDB, TVDB, Rottentomatoes connection
-- Add selected files to VLC playlist with one click
+- Add selected files to VLC playlist with one click (only on Windows yet)
 
 #Future plans
 I plan to keep the program updated, so if you have any suggestion, feel free to contact me at csomakk@gmail.com
@@ -38,6 +38,9 @@ planned features:
 - settings panel
 - other enhancements
 - deeper VLC integration: Auto mark watched percentage if played in VLC
+- VLC on mac as well
+- other media players
+- total commander integration
 
 #Pro tip:
 Use 'N' keyboard shortcut to mark watched, and start playing next video
