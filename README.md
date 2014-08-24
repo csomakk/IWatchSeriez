@@ -4,12 +4,12 @@ Have you ever forgot, where did you left your favourite series? Have you ever sp
 I Watch Seriez is a file browser to help you keep track of your progress, latest and next episode info, and much more! Its open-source, and supports bluetooth!
 
 #Download and install
-1) IWatchSeriez needs Adobe AIR to run. Don't worry, it won't slow down anything. Grab it here: http://get.adobe.com/air/
+1) __IWatchSeriez needs Adobe AIR to run__. Don't worry, it won't slow down anything. Grab it here: http://get.adobe.com/air/
 
 2) __Latest Mac and Windowns installer__ is always available here: 
-__https://github.com/csomakk/IWatchSeriez/raw/master/install/IWatchSeriez.air__
+https://github.com/csomakk/IWatchSeriez/raw/master/install/IWatchSeriez.air
 
-
+___
 There is also an .exe installer if you don't want .air, but the preferred version is the AIR one.
 https://github.com/csomakk/IWatchSeriez/raw/master/install/IWatchSeriez.exe
 
