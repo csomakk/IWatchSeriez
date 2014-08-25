@@ -22,8 +22,6 @@ public class VLCManager {
 	    try {
             mediaPlayer = mediaPlayer.resolvePath(VLC_PATH); //TODO settings
 	    } catch (e:Error) {
-		    IWatchSeriez.CONTEXT.mainView.alert("Couldn't resolve VLC path. Should be at " + VLC_PATH, "Error opening VLC");
-		    //TODO handle this. settings, mac
 		    return;
 	    }
         if (NativeProcess.isSupported) {
@@ -32,8 +30,8 @@ public class VLCManager {
         }
     }
 
-    public function showCantFindMediaPlayer():void {
-
+    public static function showCantFindMediaPlayer():void {
+	    IWatchSeriez.CONTEXT.mainView.alert("Couldn't open console, or resolve VLC path. Should be at " + VLC_PATH, "Error opening VLC");
     }
 
     public function addToPlaylist(files:Array):void {
