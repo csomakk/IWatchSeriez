@@ -97,6 +97,8 @@
             setSelectedToPreviousFolder();
 
             getInfo();
+
+            IWatchSeriez.CONTEXT.locationsDB.save();
         }
 
         private function setSelectedToPreviousFolder():void {
