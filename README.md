@@ -33,7 +33,6 @@ More screenshots in the screenshot folder: https://github.com/csomakk/IWatchSeri
 #Future plans
 I plan to keep the program updated, so if you have any suggestion, feel free to contact me at csomakk@gmail.com
 planned features:
-- retina display
 - sync with mobile (this will need lots of resources)
 - settings panel
 - other enhancements
