@@ -5,20 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f95833a3-feed-4a79-9285-d9d3c272d371" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/subtitle.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/install/IWatchSeriez.air" afterPath="$PROJECT_DIR$/install/IWatchSeriez.air" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/install/IWatchSeriez.exe" afterPath="$PROJECT_DIR$/install/IWatchSeriez.exe" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IWatchSeriez-app.xml" afterPath="$PROJECT_DIR$/IWatchSeriez-app.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/updateConfig.xml" afterPath="$PROJECT_DIR$/src/updateConfig.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/install/updateDescriptor.xml" afterPath="$PROJECT_DIR$/install/updateDescriptor.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/updateDescriptor.xml" afterPath="$PROJECT_DIR$/src/updateDescriptor.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/utils/Settings.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Context.as" afterPath="$PROJECT_DIR$/src/Context.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IWatchSeriez.mxml" afterPath="$PROJECT_DIR$/src/IWatchSeriez.mxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/VLCManager.as" afterPath="$PROJECT_DIR$/src/utils/VLCManager.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="IWatchSeriez.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1408996531447" ignored="false" />
+    <file path="/Dummy.txt" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1410115900260" ignored="false" />
     <file path="$PROJECT_DIR$/install/updateConfig.xml" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1408967122389" ignored="false" />
     <file path="/MainView.mxml" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1408996441762" ignored="false" />
+    <file path="/fragment.js2" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1410119888769" ignored="false" />
+    <file path="/Settings.as" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1410121681658" ignored="false" />
+    <file path="/Context.as" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1410122255160" ignored="false" />
+    <file path="/VLCManager.as" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1410122196810" ignored="false" />
+    <file path="/a.dummy" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1410121743808" ignored="false" />
+    <file path="/IWatchSeriez.mxml" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1410122264162" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +36,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -67,7 +71,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -77,28 +80,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ant.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/ant.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profiles_settings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/copyright/profiles_settings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="54" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="workspace.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="20" column="7" selection-start="1673" selection-end="1673" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Settings.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/Settings.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="0" selection-start="572" selection-end="572" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VLCManager.as" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/utils/VLCManager.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="67" selection-start="325" selection-end="325" vertical-scroll-proportion="0.36266667">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Context.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Context.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="26" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -107,8 +119,23 @@
       <file leaf-file-name="MainView.mxml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/fileList/MainView.mxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="20" selection-start="3544" selection-end="3544" vertical-scroll-proportion="-6.230769">
+            <state line="34" column="34" selection-start="1097" selection-end="1097" vertical-scroll-proportion="-22.23077">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IWatchSeriez.mxml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/IWatchSeriez.mxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="27" selection-start="1151" selection-end="1151" vertical-scroll-proportion="-4.5384617">
+              <folding>
+                <marker date="1410122265245" expanded="true" signature="523:592" placeholder="..." />
+                <marker date="1410122265245" expanded="true" signature="780:906" placeholder="{...}" />
+                <marker date="1410122265245" expanded="true" signature="971:1061" placeholder="{...}" />
+                <marker date="1410122265245" expanded="true" signature="1122:1265" placeholder="{...}" />
+                <marker date="1410122265245" expanded="true" signature="1341:1393" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,16 +143,7 @@
       <file leaf-file-name="CsUtils.as" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/CsUtils.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="30" selection-start="990" selection-end="990" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LocationDataBase.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/LocationDataBase.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="21" selection-start="1233" selection-end="1233" vertical-scroll-proportion="0.0">
+            <state line="34" column="51" selection-start="1189" selection-end="1190" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -149,26 +167,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="updateConfig.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="updateConfig.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/updateConfig.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="20" selection-start="254" selection-end="254" vertical-scroll-proportion="0.18181819">
+            <state line="4" column="20" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IWatchSeriez.mxml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/IWatchSeriez.mxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="17" selection-start="1141" selection-end="1141" vertical-scroll-proportion="-3.9230769">
-              <folding>
-                <marker date="1408190477249" expanded="false" signature="523:592" placeholder="..." />
-                <marker date="1408190477249" expanded="true" signature="780:906" placeholder="{...}" />
-                <marker date="1408190477249" expanded="true" signature="971:1061" placeholder="{...}" />
-                <marker date="1408190477249" expanded="true" signature="1122:1237" placeholder="{...}" />
-                <marker date="1408190477249" expanded="true" signature="1313:1365" placeholder="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -195,7 +198,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/FileSystemListItemRenderer.mxml" />
-        <option value="$PROJECT_DIR$/src/IWatchSeriez.mxml" />
         <option value="$PROJECT_DIR$/src/IconsBar.mxml" />
         <option value="$PROJECT_DIR$/src/IconClasses.as" />
         <option value="$PROJECT_DIR$/todo.txt" />
@@ -203,10 +205,14 @@
         <option value="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/components/fileList/MainView.mxml" />
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/IWatchSeriez-app.xml" />
         <option value="$PROJECT_DIR$/src/updateDescriptor.xml" />
         <option value="$PROJECT_DIR$/src/updateConfig.xml" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/utils/VLCManager.as" />
+        <option value="$PROJECT_DIR$/src/utils/Settings.as" />
+        <option value="$PROJECT_DIR$/src/Context.as" />
+        <option value="$PROJECT_DIR$/src/IWatchSeriez.mxml" />
       </list>
     </option>
   </component>
@@ -244,6 +250,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -294,9 +301,44 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IWatchSeriez" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IWatchSeriez" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IWatchSeriez" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IWatchSeriez" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -316,10 +358,13 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateActionScriptClassDialog.DESTINATION_PACKAGE_RECENT_KEY">
+      <recent name="utils" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Dropbox\git\IWatchSeriez\src" />
     </key>
@@ -369,35 +414,6 @@
       <option name="trusted" value="true" />
       <method />
     </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="GLUE" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -426,9 +442,33 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="RemoteFlashRunConfigurationType" factoryName="Flash Remote Debug">
-      <option name="BCName" value="" />
-      <option name="moduleName" value="" />
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="GLUE" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -444,6 +484,11 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="RemoteFlashRunConfigurationType" factoryName="Flash Remote Debug">
+      <option name="BCName" value="" />
+      <option name="moduleName" value="" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -465,21 +510,6 @@
       </option>
       <envs />
       <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
@@ -514,6 +544,21 @@
       <option name="screenWidth" value="0" />
       <option name="url" value="http://" />
       <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
       <method />
     </configuration>
     <configuration default="false" name="Unnamed" type="FlashRunConfigurationType" factoryName="Flash App">
@@ -587,7 +632,11 @@
       <created>1408996536867</created>
       <updated>1408996536867</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="1.0.2 release">
+      <created>1408996656290</created>
+      <updated>1408996656290</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -597,23 +646,23 @@
     <frame x="-4" y="-4" width="1374" height="776" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3253205" sideWeight="0.4848485" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32371795" sideWeight="0.47878787" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.4939394" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.4909091" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3974359" sideWeight="0.49015152" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3974359" sideWeight="0.4598485" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3253205" sideWeight="0.5098485" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32371795" sideWeight="0.5159091" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.4378788" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.40984848" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24848485" sideWeight="0.67467946" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24848485" sideWeight="0.67628205" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -674,7 +723,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="idea stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.0.2 release" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -692,9 +741,19 @@
     <MESSAGE value="retina fixed build?" />
     <MESSAGE value="#37 save on folder change" />
     <MESSAGE value="idea stuff" />
+    <MESSAGE value="1.0.2 release" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="flex">
+          <url>file://$PROJECT_DIR$/src/utils/VLCManager.as</url>
+          <line>35</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="10" />
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -705,42 +764,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1408190477249" expanded="false" signature="523:592" placeholder="..." />
-            <marker date="1408190477249" expanded="true" signature="780:906" placeholder="{...}" />
-            <marker date="1408190477249" expanded="true" signature="971:1061" placeholder="{...}" />
-            <marker date="1408190477249" expanded="true" signature="1122:1237" placeholder="{...}" />
-            <marker date="1408190477249" expanded="true" signature="1313:1365" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/appIcons/16.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IWatchSeriez.mxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1408190477249" expanded="false" signature="523:592" placeholder="..." />
-            <marker date="1408190477249" expanded="true" signature="780:906" placeholder="{...}" />
-            <marker date="1408190477249" expanded="true" signature="971:1061" placeholder="{...}" />
-            <marker date="1408190477249" expanded="true" signature="1122:1237" placeholder="{...}" />
-            <marker date="1408190477249" expanded="true" signature="1313:1365" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IWatchSeriez.mxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1408190477249" expanded="false" signature="523:592" placeholder="..." />
-            <marker date="1408190477249" expanded="true" signature="780:906" placeholder="{...}" />
-            <marker date="1408190477249" expanded="true" signature="971:1061" placeholder="{...}" />
-            <marker date="1408190477249" expanded="true" signature="1122:1237" placeholder="{...}" />
-            <marker date="1408190477249" expanded="true" signature="1313:1365" placeholder="{...}" />
+            <marker date="1410122265245" expanded="true" signature="523:592" placeholder="..." />
+            <marker date="1410122265245" expanded="true" signature="780:906" placeholder="{...}" />
+            <marker date="1410122265245" expanded="true" signature="971:1061" placeholder="{...}" />
+            <marker date="1410122265245" expanded="true" signature="1122:1265" placeholder="{...}" />
+            <marker date="1410122265245" expanded="true" signature="1341:1393" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -759,28 +787,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/CsUtils.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="30" selection-start="990" selection-end="990" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/LocationDataBase.as">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="21" selection-start="1233" selection-end="1233" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/fileList/MainView.mxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="20" selection-start="3544" selection-end="3544" vertical-scroll-proportion="-6.230769">
           <folding />
         </state>
       </provider>
@@ -792,30 +804,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IWatchSeriez-app.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="20" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IWatchSeriez.mxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="17" selection-start="1141" selection-end="1141" vertical-scroll-proportion="-3.9230769">
-          <folding>
-            <marker date="1408190477249" expanded="false" signature="523:592" placeholder="..." />
-            <marker date="1408190477249" expanded="true" signature="780:906" placeholder="{...}" />
-            <marker date="1408190477249" expanded="true" signature="971:1061" placeholder="{...}" />
-            <marker date="1408190477249" expanded="true" signature="1122:1237" placeholder="{...}" />
-            <marker date="1408190477249" expanded="true" signature="1313:1365" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -828,7 +820,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/updateConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="20" selection-start="254" selection-end="254" vertical-scroll-proportion="0.18181819">
+        <state line="4" column="20" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/CsUtils.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="51" selection-start="1189" selection-end="1190" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/fileList/MainView.mxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="34" selection-start="1097" selection-end="1097" vertical-scroll-proportion="-22.23077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Context.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="26" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IWatchSeriez.mxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="27" selection-start="1151" selection-end="1151" vertical-scroll-proportion="-4.5384617">
+          <folding>
+            <marker date="1410122265245" expanded="true" signature="523:592" placeholder="..." />
+            <marker date="1410122265245" expanded="true" signature="780:906" placeholder="{...}" />
+            <marker date="1410122265245" expanded="true" signature="971:1061" placeholder="{...}" />
+            <marker date="1410122265245" expanded="true" signature="1122:1265" placeholder="{...}" />
+            <marker date="1410122265245" expanded="true" signature="1341:1393" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/Settings.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="572" selection-end="572" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="7" selection-start="1673" selection-end="1673" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/VLCManager.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="67" selection-start="325" selection-end="325" vertical-scroll-proportion="0.36266667">
           <folding />
         </state>
       </provider>

@@ -5,25 +5,19 @@ import flash.filesystem.File;
 
 public class VLCManager {
 
-    public static const VLC_PATH:String = "C:\\Program Files\\VideoLAN\\VLC\\vlc.exe";
     public static const ARG_ENQUEUE:String = "--playlist-enqueue";
     public static const ARG_FULL_SCREEN:String = "--fullscreen";
 
     protected var mediaPlayer:File;
     protected var nativeProcessStartupInfo:NativeProcessStartupInfo;
 
-	[Bindable]
-	public function get vlcAvailable():Boolean {
-		return mediaPlayer && NativeProcess.isSupported;
-	}
-
-    public function VLCManager() {
+    public function init():void {
         mediaPlayer = new File();
-	    try {
-            mediaPlayer = mediaPlayer.resolvePath(VLC_PATH); //TODO settings
-	    } catch (e:Error) {
-		    return;
-	    }
+        try {
+            mediaPlayer = mediaPlayer.resolvePath(IWatchSeriez.CONTEXT.settings.vlcPath);
+        } catch (e:Error) {
+            return;
+        }
         if (NativeProcess.isSupported) {
             nativeProcessStartupInfo = new NativeProcessStartupInfo();
             nativeProcessStartupInfo.executable = mediaPlayer;
@@ -31,7 +25,11 @@ public class VLCManager {
     }
 
     public static function showCantFindMediaPlayer():void {
-	    IWatchSeriez.CONTEXT.mainView.alert("Couldn't open console, or resolve VLC path. Should be at " + VLC_PATH, "Error opening VLC");
+	    IWatchSeriez.CONTEXT.mainView.alert("Couldn't open console, or resolve VLC path. Should be at " +
+                IWatchSeriez.CONTEXT.settings.vlcPath +
+                "Please edit settings at " +
+                IWatchSeriez.CONTEXT.settings.settingsUrl,
+                "Error opening VLC");
     }
 
     public function addToPlaylist(files:Array):void {

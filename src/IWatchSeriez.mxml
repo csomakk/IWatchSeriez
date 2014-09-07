@@ -27,6 +27,7 @@
         }
 
         private function initHandler(event:FlexEvent):void {
+            CONTEXT.init();
             CONTEXT.locationsDB.load();
             CONTEXT.fileMetaDB.load();
             updateApp();
