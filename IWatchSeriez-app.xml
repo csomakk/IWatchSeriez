@@ -6,7 +6,7 @@
     <!-- The name that is displayed in the AIR application installer. May have multiple values for each language. See samples or xsd schema file. Optional. -->
     <name>IWatchSeriez</name>
 
-    <versionNumber>1.0.2</versionNumber>
+    <versionNumber>1.0.3</versionNumber>
 
     <description>IWatchSeriez is a file browser optimised for watching seriez. more on it at
         https://github.com/csomakk/IWatchSeriez
