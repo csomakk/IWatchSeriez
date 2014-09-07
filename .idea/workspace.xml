@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f95833a3-feed-4a79-9285-d9d3c272d371" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/fileList/MainView.mxml" afterPath="$PROJECT_DIR$/src/components/fileList/MainView.mxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="IWatchSeriez.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1410122389429" ignored="false" />
+    <file path="/Dummy.txt" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1410122862300" ignored="false" />
     <file path="$PROJECT_DIR$/install/updateConfig.xml" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1408967122389" ignored="false" />
     <file path="/MainView.mxml" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1410122583438" ignored="false" />
     <file path="/fragment.js2" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1410119888769" ignored="false" />
@@ -80,7 +79,7 @@
       <file leaf-file-name="workspace.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="7" selection-start="647" selection-end="647" vertical-scroll-proportion="0.32872927">
+            <state line="11" column="23" selection-start="580" selection-end="580" vertical-scroll-proportion="0.42265195">
               <folding />
             </state>
           </provider>
@@ -195,12 +194,12 @@
         <option value="$PROJECT_DIR$/IWatchSeriez-app.xml" />
         <option value="$PROJECT_DIR$/src/updateDescriptor.xml" />
         <option value="$PROJECT_DIR$/src/updateConfig.xml" />
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/utils/VLCManager.as" />
         <option value="$PROJECT_DIR$/src/utils/Settings.as" />
         <option value="$PROJECT_DIR$/src/Context.as" />
         <option value="$PROJECT_DIR$/src/IWatchSeriez.mxml" />
         <option value="$PROJECT_DIR$/src/components/fileList/MainView.mxml" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
       </list>
     </option>
   </component>
@@ -628,7 +627,11 @@
       <created>1410122396155</created>
       <updated>1410122396155</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="#39 changes on open file is applied to parent folder as well">
+      <created>1410122864700</created>
+      <updated>1410122864700</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -715,7 +718,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="#30 added settings, with option to change vlc path" />
+    <option name="LAST_COMMIT_MESSAGE" value="#39 changes on open file is applied to parent folder as well" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -735,6 +738,7 @@
     <MESSAGE value="idea stuff" />
     <MESSAGE value="1.0.2 release" />
     <MESSAGE value="#30 added settings, with option to change vlc path" />
+    <MESSAGE value="#39 changes on open file is applied to parent folder as well" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -864,7 +868,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="7" selection-start="647" selection-end="647" vertical-scroll-proportion="0.32872927">
+        <state line="11" column="23" selection-start="580" selection-end="580" vertical-scroll-proportion="0.42265195">
           <folding />
         </state>
       </provider>
