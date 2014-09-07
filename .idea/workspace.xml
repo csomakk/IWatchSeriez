@@ -5,17 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f95833a3-feed-4a79-9285-d9d3c272d371" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/utils/Settings.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Context.as" afterPath="$PROJECT_DIR$/src/Context.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IWatchSeriez.mxml" afterPath="$PROJECT_DIR$/src/IWatchSeriez.mxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/VLCManager.as" afterPath="$PROJECT_DIR$/src/utils/VLCManager.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/fileList/MainView.mxml" afterPath="$PROJECT_DIR$/src/components/fileList/MainView.mxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="IWatchSeriez.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1410115900260" ignored="false" />
+    <file path="/Dummy.txt" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1410122389429" ignored="false" />
     <file path="$PROJECT_DIR$/install/updateConfig.xml" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1408967122389" ignored="false" />
-    <file path="/MainView.mxml" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1408996441762" ignored="false" />
+    <file path="/MainView.mxml" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1410122583438" ignored="false" />
     <file path="/fragment.js2" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1410119888769" ignored="false" />
     <file path="/Settings.as" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1410121681658" ignored="false" />
     <file path="/Context.as" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1410122255160" ignored="false" />
@@ -80,10 +77,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="workspace.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="workspace.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="7" selection-start="1673" selection-end="1673" vertical-scroll-proportion="0.0">
+            <state line="10" column="7" selection-start="647" selection-end="647" vertical-scroll-proportion="0.32872927">
               <folding />
             </state>
           </provider>
@@ -98,10 +95,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VLCManager.as" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="VLCManager.as" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/VLCManager.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="67" selection-start="325" selection-end="325" vertical-scroll-proportion="0.36266667">
+            <state line="12" column="48" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -119,23 +116,44 @@
       <file leaf-file-name="MainView.mxml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/fileList/MainView.mxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="34" selection-start="1097" selection-end="1097" vertical-scroll-proportion="-22.23077">
+            <state line="66" column="17" selection-start="2563" selection-end="2563" vertical-scroll-proportion="-8.269231">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IWatchSeriez.mxml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/IWatchSeriez.mxml">
+      <file leaf-file-name="UIComponent.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://C:/Program Files (x86)/Adobe/Adobe Flash Builder 4.6/sdks/4.6.0/frameworks/projects/framework/src/mx/core/UIComponent.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="27" selection-start="1151" selection-end="1151" vertical-scroll-proportion="-4.5384617">
-              <folding>
-                <marker date="1410122265245" expanded="true" signature="523:592" placeholder="..." />
-                <marker date="1410122265245" expanded="true" signature="780:906" placeholder="{...}" />
-                <marker date="1410122265245" expanded="true" signature="971:1061" placeholder="{...}" />
-                <marker date="1410122265245" expanded="true" signature="1122:1265" placeholder="{...}" />
-                <marker date="1410122265245" expanded="true" signature="1341:1393" placeholder="{...}" />
-              </folding>
+            <state line="13151" column="0" selection-start="428342" selection-end="428342" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="noname.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="mock:///noname.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileMeta.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/FileMeta.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="0" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileMetaDataBase.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/FileMetaDataBase.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="12" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -149,42 +167,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IWatchSeriez-app.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IWatchSeriez-app.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="20" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="updateDescriptor.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/updateDescriptor.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="24" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="updateConfig.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/updateConfig.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="20" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
-  </component>
-  <component name="Git.Push.Settings">
-    <option name="myUpdateMethod" value="REBASE" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -204,7 +192,6 @@
         <option value="$PROJECT_DIR$/.idea/ant.xml" />
         <option value="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/components/fileList/MainView.mxml" />
         <option value="$PROJECT_DIR$/IWatchSeriez-app.xml" />
         <option value="$PROJECT_DIR$/src/updateDescriptor.xml" />
         <option value="$PROJECT_DIR$/src/updateConfig.xml" />
@@ -213,6 +200,7 @@
         <option value="$PROJECT_DIR$/src/utils/Settings.as" />
         <option value="$PROJECT_DIR$/src/Context.as" />
         <option value="$PROJECT_DIR$/src/IWatchSeriez.mxml" />
+        <option value="$PROJECT_DIR$/src/components/fileList/MainView.mxml" />
       </list>
     </option>
   </component>
@@ -636,7 +624,11 @@
       <created>1408996656290</created>
       <updated>1408996656290</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="#30 added settings, with option to change vlc path">
+      <created>1410122396155</created>
+      <updated>1410122396155</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -646,18 +638,18 @@
     <frame x="-4" y="-4" width="1374" height="776" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32371795" sideWeight="0.47878787" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32371795" sideWeight="0.47575757" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.4909091" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3974359" sideWeight="0.4598485" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3974359" sideWeight="0.4568182" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32371795" sideWeight="0.5159091" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32371795" sideWeight="0.5189394" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.40984848" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.40757576" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -723,7 +715,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.0.2 release" />
+    <option name="LAST_COMMIT_MESSAGE" value="#30 added settings, with option to change vlc path" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -742,6 +734,7 @@
     <MESSAGE value="#37 save on folder change" />
     <MESSAGE value="idea stuff" />
     <MESSAGE value="1.0.2 release" />
+    <MESSAGE value="#30 added settings, with option to change vlc path" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -752,7 +745,7 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="10" />
+      <option name="time" value="13" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -760,31 +753,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/IWatchSeriez.mxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1410122265245" expanded="true" signature="523:592" placeholder="..." />
-            <marker date="1410122265245" expanded="true" signature="780:906" placeholder="{...}" />
-            <marker date="1410122265245" expanded="true" signature="971:1061" placeholder="{...}" />
-            <marker date="1410122265245" expanded="true" signature="1122:1265" placeholder="{...}" />
-            <marker date="1410122265245" expanded="true" signature="1341:1393" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/appIcons/16.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/ant.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -832,13 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/fileList/MainView.mxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="34" selection-start="1097" selection-end="1097" vertical-scroll-proportion="-22.23077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Context.as">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="26" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0">
@@ -850,11 +811,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="27" selection-start="1151" selection-end="1151" vertical-scroll-proportion="-4.5384617">
           <folding>
-            <marker date="1410122265245" expanded="true" signature="523:592" placeholder="..." />
-            <marker date="1410122265245" expanded="true" signature="780:906" placeholder="{...}" />
-            <marker date="1410122265245" expanded="true" signature="971:1061" placeholder="{...}" />
-            <marker date="1410122265245" expanded="true" signature="1122:1265" placeholder="{...}" />
-            <marker date="1410122265245" expanded="true" signature="1341:1393" placeholder="{...}" />
+            <marker date="1410122265245" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1410122265245" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1410122265245" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1410122265245" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1410122265245" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -866,16 +827,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/src/utils/VLCManager.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="7" selection-start="1673" selection-end="1673" vertical-scroll-proportion="0.0">
+        <state line="12" column="48" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/VLCManager.as">
+    <entry file="file://$PROJECT_DIR$/src/core/FileMetaDataBase.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="67" selection-start="325" selection-end="325" vertical-scroll-proportion="0.36266667">
+        <state line="22" column="12" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/FileMeta.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Adobe/Adobe Flash Builder 4.6/sdks/4.6.0/frameworks/projects/framework/src/mx/core/UIComponent.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13151" column="0" selection-start="428342" selection-end="428342" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/fileList/MainView.mxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="17" selection-start="2563" selection-end="2563" vertical-scroll-proportion="-8.269231">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="7" selection-start="647" selection-end="647" vertical-scroll-proportion="0.32872927">
           <folding />
         </state>
       </provider>

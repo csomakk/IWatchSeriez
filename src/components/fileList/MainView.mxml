@@ -45,9 +45,7 @@
 
         public function openFile(file:File):void {
             file.openWithDefaultApplication();
-            IWatchSeriez.CONTEXT.fileMetaDB.getMeta(file.nativePath).icon = IconClasses.questionIconName;
-            refreshFileList();
-            IWatchSeriez.CONTEXT.fileMetaDB.save();
+            setIconsForSelected(IconClasses.questionIconName);
         }
 
         private function fileList_fileChooseHandler(event:FileEvent):void {
