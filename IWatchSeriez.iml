@@ -4,7 +4,7 @@
     <configurations>
       <configuration name="IWatchSeriez" target-platform="Desktop" main-class="IWatchSeriez" output-file="IWatchSeriez.swf" output-folder="$MODULE_DIR$/install">
         <dependencies target-player="11.1">
-          <sdk name="4.6.0" />
+          <sdk name="flex413air415beta" />
         </dependencies>
         <compiler-options />
         <packaging-air-desktop use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/IWatchSeriez-app.xml" package-file-name="IWatchSeriez">
@@ -24,7 +24,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/assets" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="4.6.0" jdkType="Flex SDK Type (new)" />
+    <orderEntry type="jdk" jdkName="flex413air415beta" jdkType="Flex SDK Type (new)" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
