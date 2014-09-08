@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f95833a3-feed-4a79-9285-d9d3c272d371" name="Default" comment="1.0.3 release">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IWatchSeriez-app.xml" afterPath="$PROJECT_DIR$/IWatchSeriez-app.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IWatchSeriez.iml" afterPath="$PROJECT_DIR$/IWatchSeriez.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="f95833a3-feed-4a79-9285-d9d3c272d371" name="Default" comment="sdk change">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="IWatchSeriez.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1410217161318" ignored="false" />
+    <file path="/Dummy.txt" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1410217282036" ignored="false" />
     <file path="/MainView.mxml" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1410122583438" ignored="false" />
     <file path="/fragment.js2" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1410216965392" ignored="false" />
     <file path="/Settings.as" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1410121681658" ignored="false" />
@@ -78,7 +75,7 @@
       <file leaf-file-name="workspace.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="27" selection-start="1986" selection-end="1986" vertical-scroll-proportion="0.0">
+            <state line="15" column="27" selection-start="1294" selection-end="1294" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,7 +111,7 @@
       <file leaf-file-name="IWatchSeriez-app.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/IWatchSeriez-app.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="21" selection-start="474" selection-end="474" vertical-scroll-proportion="0.4214876">
+            <state line="13" column="32" selection-start="668" selection-end="668" vertical-scroll-proportion="0.60881543">
               <folding />
             </state>
           </provider>
@@ -164,6 +161,7 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="REBASE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitLogSettings">
@@ -256,7 +254,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.lastSelected" value="settings.github" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/appIcons" />
@@ -529,7 +527,11 @@
       <created>1410123283985</created>
       <updated>1410123283985</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="sdk change">
+      <created>1410217216728</created>
+      <updated>1410217216728</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -537,9 +539,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="776" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3221154" sideWeight="0.46666667" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3221154" sideWeight="0.46666667" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -616,7 +618,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.0.3 release" />
+    <option name="LAST_COMMIT_MESSAGE" value="sdk change" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -639,6 +641,7 @@
     <MESSAGE value="#39 changes on open file is applied to parent folder as well" />
     <MESSAGE value="whatever" />
     <MESSAGE value="1.0.3 release" />
+    <MESSAGE value="sdk change" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -742,7 +745,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="27" selection-start="1986" selection-end="1986" vertical-scroll-proportion="0.0">
+        <state line="15" column="27" selection-start="1294" selection-end="1294" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -756,7 +759,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/IWatchSeriez-app.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="21" selection-start="474" selection-end="474" vertical-scroll-proportion="0.4214876">
+        <state line="13" column="32" selection-start="668" selection-end="668" vertical-scroll-proportion="0.60881543">
           <folding />
         </state>
       </provider>
