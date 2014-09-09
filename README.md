@@ -34,12 +34,12 @@ More screenshots in the screenshot folder: https://github.com/csomakk/IWatchSeri
 I plan to keep the program updated, so if you have any suggestion, feel free to contact me at csomakk@gmail.com
 planned features:
 - sync with mobile (this will need lots of resources)
-- settings panel
+- settings panel (instead editing xml)
 - other enhancements
 - deeper VLC integration: Auto mark watched percentage if played in VLC
-- VLC on mac as well
 - other media players
 - total commander integration
+- mark files in exploer/finder as well
 
 #Pro tip:
 Use 'N' keyboard shortcut to mark watched, and start playing next video
