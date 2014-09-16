@@ -3,6 +3,8 @@ IWatchSeriez
 Have you ever forgot, where did you left your favourite series? Have you ever spent hours opening episode after episode to see which of them you remember? Do you have tons of movies in the your download folder, but don't remember which ones you saw? Then IWatchSeriez is for you! 
 I Watch Seriez is a file browser to help you keep track of your progress, latest and next episode info, and much more! Its open-source, and supports bluetooth!
 
+So whats the deal? When you start an episode, it automatically gets marked, so you won't forget :)
+
 #Download and install
 1) __IWatchSeriez needs Adobe AIR to run__. Don't worry, it won't slow down anything. Grab it here: http://get.adobe.com/air/
 
