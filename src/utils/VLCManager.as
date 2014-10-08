@@ -27,7 +27,7 @@ public class VLCManager {
     public static function showCantFindMediaPlayer():void {
 	    IWatchSeriez.CONTEXT.mainView.alert("Couldn't open console, or resolve VLC path. Should be at " +
                 IWatchSeriez.CONTEXT.settings.vlcPath +
-                "Please edit settings at " +
+                "\nPlease edit settings at " +
                 IWatchSeriez.CONTEXT.settings.settingsUrl,
                 "Error opening VLC");
     }

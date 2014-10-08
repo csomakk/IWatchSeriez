@@ -10,7 +10,7 @@ public class Settings {
 
     public function Settings() {
         var file:File = File.applicationStorageDirectory.resolvePath(filePath);
-        settingsUrl = file.url;
+        settingsUrl = file.nativePath;
         if (!file.exists) {
             CsUtils.saveAsXML(new XML("<settings><vlcpath>C:\\Program Files\\VideoLAN\\VLC\\vlc.exe</vlcpath></settings>"), settingsUrl);
         }
