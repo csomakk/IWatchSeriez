@@ -63,6 +63,10 @@ public class IconClasses {
     [Bindable]
     public static var githubIcon:Class;
 
+    [Embed(source="/settings.png")]
+    [Bindable]
+    public static var settingsIcon:Class;
+
     public static function stringToIcon(name:String):Class {
         if (!name) return null;
         if (name.search(newIconName) == 0) return newIcon;

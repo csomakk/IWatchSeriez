@@ -7,10 +7,21 @@
             var urlReq:URLRequest = new URLRequest("https://github.com/csomakk/IWatchSeriez/");
             navigateToURL(urlReq, "_blank");
         }
+
+        private static function settings_clickHandler(event:MouseEvent):void {
+            var file:File = new File(IWatchSeriez.CONTEXT.settings.settingsUrl);
+            file.openWithDefaultApplication();
+        }
+
         ]]></fx:Script>
     <s:Image width="32" height="32"
              smooth="true"
              source="{ IconClasses.githubIcon }"
              toolTip="About IWatchSeriez"
              click="about_clickHandler(event)"/>
+    <s:Image width="32" height="32" x="34"
+             smooth="true"
+             source="{ IconClasses.settingsIcon }"
+             toolTip="Edit Settings file. This will open with default app."
+             click="settings_clickHandler(event)"/>
 </s:Group>

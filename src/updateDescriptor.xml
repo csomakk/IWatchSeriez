@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <update xmlns="http://ns.adobe.com/air/framework/update/description/2.5">
-    <versionNumber>1.0.3</versionNumber>
+    <versionNumber>1.0.4</versionNumber>
     <url>https://github.com/csomakk/IWatchSeriez/raw/master/install/IWatchSeriez.air</url>
     <description>IWatchSeriez, check it out on Github!</description>
 </update>
