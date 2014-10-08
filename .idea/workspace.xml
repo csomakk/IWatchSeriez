@@ -1,23 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f95833a3-feed-4a79-9285-d9d3c272d371" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/1412822228_progress1-128.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/1412822313_pause-circle-outline-128.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/half_b_option.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/settings.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/screenshots/v011.PNG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/white.png" afterPath="$PROJECT_DIR$/assets/white.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/about/AboutView.mxml" afterPath="$PROJECT_DIR$/src/components/about/AboutView.mxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IWatchSeriez.iml" afterPath="$PROJECT_DIR$/IWatchSeriez.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/IconClasses.as" afterPath="$PROJECT_DIR$/src/utils/IconClasses.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/updateDescriptor.xml" afterPath="$PROJECT_DIR$/src/updateDescriptor.xml" />
+    <list default="true" id="f95833a3-feed-4a79-9285-d9d3c272d371" name="Default" comment="#43 settings button directing to xml, open with default app">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="IWatchSeriez.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1412805464001" ignored="false" />
+    <file path="/Dummy.txt" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1412805807463" ignored="false" />
     <file path="/MainView.mxml" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1410122583438" ignored="false" />
     <file path="/fragment.js2" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1412804711175" ignored="false" />
     <file path="/Settings.as" changelist="f95833a3-feed-4a79-9285-d9d3c272d371" time="1412805041248" ignored="false" />
@@ -89,7 +78,7 @@
       <file leaf-file-name="workspace.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="27" selection-start="2343" selection-end="2343" vertical-scroll-proportion="0.0">
+            <state line="17" column="27" selection-start="1592" selection-end="1592" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -107,7 +96,7 @@
       <file leaf-file-name="AboutView.mxml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/about/AboutView.mxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="43" selection-start="844" selection-end="844" vertical-scroll-proportion="0.68">
+            <state line="17" column="57" selection-start="709" selection-end="709" vertical-scroll-proportion="0.5342857">
               <folding>
                 <marker date="1412805190493" expanded="true" signature="251:403" placeholder="{...}" />
                 <marker date="1412805190493" expanded="true" signature="482:621" placeholder="{...}" />
@@ -655,7 +644,11 @@
       <created>1412805477640</created>
       <updated>1412805477640</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="#43 settings button directing to xml, open with default app">
+      <created>1412805563435</created>
+      <updated>1412805563435</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -742,7 +735,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="tooltip fix, add to vlc fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="#43 settings button directing to xml, open with default app" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -766,6 +759,7 @@
     <MESSAGE value="whatever" />
     <MESSAGE value="1.0.3 release" />
     <MESSAGE value="tooltip fix, add to vlc fix" />
+    <MESSAGE value="#43 settings button directing to xml, open with default app" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -835,7 +829,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="27" selection-start="2343" selection-end="2343" vertical-scroll-proportion="0.0">
+        <state line="17" column="27" selection-start="1592" selection-end="1592" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -936,7 +930,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/about/AboutView.mxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="43" selection-start="844" selection-end="844" vertical-scroll-proportion="0.68">
+        <state line="17" column="57" selection-start="709" selection-end="709" vertical-scroll-proportion="0.5342857">
           <folding>
             <marker date="1412805190493" expanded="true" signature="251:403" placeholder="{...}" />
             <marker date="1412805190493" expanded="true" signature="482:621" placeholder="{...}" />
