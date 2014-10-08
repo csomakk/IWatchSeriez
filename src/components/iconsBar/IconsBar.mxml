@@ -26,11 +26,11 @@
              source="{IconClasses.wontIcon}" height="32" width="32" smooth="true"/>
     <s:Image click="mainView.setIconsForSelected(IconClasses.heartIconName)" toolTip="love"
              source="{IconClasses.heartIcon}" height="32" width="32" smooth="true"/>
-    <s:Image click="mainView.setIconsForSelected(IconClasses.starIconName)" toolTip="love"
+    <s:Image click="mainView.setIconsForSelected(IconClasses.starIconName)" toolTip="star"
              source="{IconClasses.starIcon}" height="32" width="32" smooth="true"/>
     <s:Image click="mainView.setIconsForSelected(null)" toolTip="clear"
              source="{IconClasses.clearIcon}" height="32" width="32" smooth="true"/>
-    <s:Image width="64"/>
+    <s:Image width="12"/>
     <s:Image click="onOpenInVLCClick(event)" toolTip="openInVLC"
              source="{ IconClasses.vlcPlaylistIcon }" height="32" width="32" smooth="true"/>
 </s:HGroup>
