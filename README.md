@@ -50,7 +50,7 @@ Use 'N' keyboard shortcut to mark watched, and start playing next video
 Please add any issue you find, and feel free to comment on the program here, or in email at csomakk@gmail.com
 This is my hobby project for more than a year now. 
 
-I spent tons of hours with it. If this program made your life easier, please send a tip on https://www.gittip.com/csomakk or on PayPal with https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=csomak%40csomak%2ehu&lc=HU&item_name=IWatchSeriez&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
+I spent tons of hours making this program. If it made your life easier, please send a tip through PayPal with https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=csomak%40csomak%2ehu&lc=HU&item_name=IWatchSeriez&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted or on https://www.gittip.com/csomakk or
 
 #FOR DEVS:
 I Watch Seriez is written in Adobe/Apache Flex 4.6.0. I personally use IntelliJIdea12 Ultimate as an IDE, I've included the project settings in this repo.
