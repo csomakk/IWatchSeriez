@@ -12,7 +12,7 @@ __So whats the deal?__ When you start an episode, it automatically gets marked, 
 https://github.com/csomakk/IWatchSeriez/raw/master/install/IWatchSeriez.air
 
 ___
-There is also an .exe installer if you don't want .air, but the preferred version is the AIR one.
+There is also an .exe installer -if you don't want .air, but the preferred version is the AIR one.- but this is reported to have several deal breaker bugs. Trying to fix it.
 https://github.com/csomakk/IWatchSeriez/raw/master/install/IWatchSeriez.exe
 
 Feel free to provide feedback at csomakk@gmail.com
