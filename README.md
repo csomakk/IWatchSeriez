@@ -59,3 +59,6 @@ Anybody is free to add anything, or contact me with questions at csomakk@gmail.c
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/csomakk/IWatchSeriez/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 [![Analytics](https://ga-beacon.appspot.com/UA-6132321-8/csomakk/IWatchSeriez)](https://github.com/igrigorik/ga-beacon)
+
+Jobs available: http://www.masters55.com
+
